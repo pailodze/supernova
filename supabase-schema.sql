@@ -146,6 +146,24 @@ CREATE TABLE IF NOT EXISTS task_skill_rewards (
 CREATE INDEX IF NOT EXISTS idx_task_skill_rewards_task ON task_skill_rewards(task_id);
 CREATE INDEX IF NOT EXISTS idx_task_skill_rewards_skill ON task_skill_rewards(skill_id);
 
+-- Certificate delivery requests table
+CREATE TABLE IF NOT EXISTS certificate_requests (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  student_id UUID NOT NULL REFERENCES students(id) ON DELETE CASCADE,
+  address TEXT NOT NULL,
+  latitude DECIMAL(10, 8) NOT NULL,
+  longitude DECIMAL(11, 8) NOT NULL,
+  additional_info TEXT,
+  status TEXT NOT NULL DEFAULT 'pending', -- pending, rejected, sent, delivered
+  rejection_reason TEXT,
+  estimated_arrival DATE,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_certificate_requests_student ON certificate_requests(student_id);
+CREATE INDEX IF NOT EXISTS idx_certificate_requests_status ON certificate_requests(status);
+
 -- Disable RLS for simplicity (enable if needed for production)
 ALTER TABLE students DISABLE ROW LEVEL SECURITY;
 ALTER TABLE otp_codes DISABLE ROW LEVEL SECURITY;
@@ -154,3 +172,4 @@ ALTER TABLE skills DISABLE ROW LEVEL SECURITY;
 ALTER TABLE student_skills DISABLE ROW LEVEL SECURITY;
 ALTER TABLE job_skill_requirements DISABLE ROW LEVEL SECURITY;
 ALTER TABLE task_skill_rewards DISABLE ROW LEVEL SECURITY;
+ALTER TABLE certificate_requests DISABLE ROW LEVEL SECURITY;

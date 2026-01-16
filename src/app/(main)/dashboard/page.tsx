@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation'
 import { createServerSupabaseClient } from '@/lib/supabase-server'
 import type { Job, Course, Task } from '@/lib/supabase'
 import DashboardTabs from '@/components/DashboardTabs'
+import CertificateRequestCard from '@/components/CertificateRequestCard'
 
 async function getStudent(studentId: string) {
   const supabase = createServerSupabaseClient()
@@ -199,6 +200,9 @@ export default async function DashboardPage() {
           </div>
         </div>
       </div>
+
+      {/* Certificate Request CTA */}
+      <CertificateRequestCard studentId={session.studentId} />
 
       {/* Tabs */}
       <DashboardTabs jobs={jobs} tasks={tasks} />

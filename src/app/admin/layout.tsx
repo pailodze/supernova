@@ -67,6 +67,12 @@ export default async function AdminLayout({
                 უნარები
               </Link>
               <Link
+                href="/admin/certificates"
+                className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition"
+              >
+                სერტიფიკატები
+              </Link>
+              <Link
                 href="/admin/logs"
                 className="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-lg transition"
               >

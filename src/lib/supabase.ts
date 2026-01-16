@@ -176,3 +176,19 @@ export type TaskSkillReward = {
   level_reward: number
   created_at: string
 }
+
+export type CertificateRequest = {
+  id: string
+  student_id: string
+  address: string
+  latitude: number
+  longitude: number
+  additional_info: string | null
+  status: 'pending' | 'rejected' | 'sent' | 'delivered'
+  rejection_reason: string | null
+  estimated_arrival: string | null
+  created_at: string
+  updated_at: string
+  // Populated via join
+  student?: Student
+}
