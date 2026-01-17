@@ -192,3 +192,36 @@ export type CertificateRequest = {
   // Populated via join
   student?: Student
 }
+
+export type Technology = {
+  id: string
+  course_id: string
+  name: string
+  slug: string
+  description: string | null
+  icon: string | null
+  order_index: number
+  is_active: boolean
+  created_at: string
+  updated_at: string
+  // Populated via join
+  course?: Course
+  topics?: Topic[]
+}
+
+export type Topic = {
+  id: string
+  technology_id: string
+  name: string
+  slug: string
+  description: string | null
+  duration: number
+  theory_video: string | null
+  miro_link: string | null
+  order_index: number
+  is_active: boolean
+  created_at: string
+  updated_at: string
+  // Populated via join
+  technology?: Technology
+}

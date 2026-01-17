@@ -23,6 +23,12 @@ export default async function MainHeader() {
           <span>🚀</span> supernova.guru
         </Link>
         <div className="flex items-center gap-3">
+          <Link
+            href="/learn"
+            className="px-3 py-1.5 text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white text-sm font-medium transition"
+          >
+            სასწავლო
+          </Link>
           {isAdmin && (
             <Link
               href="/admin"

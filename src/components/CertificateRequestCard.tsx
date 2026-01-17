@@ -61,8 +61,34 @@ export default function CertificateRequestCard({ studentId }: Props) {
     }
   }
 
+  const [loadingAddress, setLoadingAddress] = useState(false)
+
+  const reverseGeocode = async (lat: number, lng: number) => {
+    setLoadingAddress(true)
+    try {
+      const response = await fetch(
+        `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&zoom=18&addressdetails=1`,
+        { headers: { 'Accept-Language': 'ka,en' } }
+      )
+      if (response.ok) {
+        const data = await response.json()
+        if (data.display_name) {
+          // Clean up the address - remove country and postal code for brevity
+          const parts = data.display_name.split(', ')
+          const cleanAddress = parts.slice(0, -2).join(', ')
+          setFormData(prev => ({ ...prev, address: cleanAddress || data.display_name }))
+        }
+      }
+    } catch {
+      // Silently fail - user can still type address manually
+    } finally {
+      setLoadingAddress(false)
+    }
+  }
+
   const handleLocationSelect = (lat: number, lng: number) => {
     setFormData(prev => ({ ...prev, latitude: lat, longitude: lng }))
+    reverseGeocode(lat, lng)
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -165,21 +191,27 @@ export default function CertificateRequestCard({ studentId }: Props) {
     <>
       <div className="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl shadow-lg p-6 mb-8 text-white">
         <div className="flex items-center justify-between">
-          <div>
-            <h3 className="text-lg font-semibold mb-1">სერტიფიკატის მიწოდება</h3>
-            <p className="text-indigo-100 text-sm">
-              {canRequest
-                ? 'მოითხოვე შენი სერტიფიკატის მიწოდება სახლში'
-                : 'თქვენი მოთხოვნა დამუშავების პროცესშია'
-              }
-            </p>
-          </div>
           <div className="flex items-center gap-3">
+            <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-2xl">
+              🎓
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-1">სერტიფიკატის მიწოდება</h3>
+              <p className="text-indigo-100 text-sm">
+                {canRequest
+                  ? 'მოითხოვე შენი სერტიფიკატის მიწოდება სახლში'
+                  : 'თქვენი მოთხოვნა დამუშავების პროცესშია'
+                }
+              </p>
+            </div>
+          </div>
+          {/* Desktop: show button/status inline */}
+          <div className="hidden sm:flex items-center gap-3">
             {request && !canRequest && getStatusBadge()}
             {canRequest && (
               <button
                 onClick={() => setShowModal(true)}
-                className="px-4 py-2 bg-white text-indigo-600 font-medium rounded-lg hover:bg-indigo-50 transition"
+                className="px-4 py-2 bg-white text-indigo-600 font-medium rounded-lg hover:bg-indigo-50 transition whitespace-nowrap"
               >
                 {request?.status === 'rejected' || request?.status === 'delivered'
                   ? 'ახალი მოთხოვნა'
@@ -189,8 +221,24 @@ export default function CertificateRequestCard({ studentId }: Props) {
             )}
           </div>
         </div>
+        {/* Mobile: show status and button below separator */}
+        <div className="sm:hidden mt-3 pt-3 border-t border-white/20 flex items-center justify-between">
+          <div>{getStatusBadge()}</div>
+          {canRequest && (
+            <button
+              onClick={() => setShowModal(true)}
+              className="px-4 py-2 bg-white text-indigo-600 font-medium rounded-lg hover:bg-indigo-50 transition whitespace-nowrap"
+            >
+              {request?.status === 'rejected' || request?.status === 'delivered'
+                ? 'ახალი მოთხოვნა'
+                : 'მოთხოვნა'
+              }
+            </button>
+          )}
+        </div>
+        {/* Desktop: show status below for non-pending when there's extra info */}
         {request && request.status !== 'pending' && (
-          <div className="mt-3 pt-3 border-t border-white/20">
+          <div className="hidden sm:block mt-3 pt-3 border-t border-white/20">
             {getStatusBadge()}
           </div>
         )}
@@ -230,14 +278,21 @@ export default function CertificateRequestCard({ studentId }: Props) {
                 <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-1">
                   მისამართი *
                 </label>
-                <input
-                  type="text"
-                  value={formData.address}
-                  onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                  placeholder="მაგ: ვაკე, ჭავჭავაძის 12"
-                  className="w-full px-3 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  required
-                />
+                <div className="relative">
+                  <input
+                    type="text"
+                    value={formData.address}
+                    onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+                    placeholder="მაგ: ვაკე, ჭავჭავაძის 12"
+                    className="w-full px-3 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    required
+                  />
+                  {loadingAddress && (
+                    <div className="absolute right-3 top-1/2 -translate-y-1/2">
+                      <div className="w-4 h-4 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin"></div>
+                    </div>
+                  )}
+                </div>
               </div>
 
               {/* Additional Info */}

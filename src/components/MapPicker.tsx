@@ -30,9 +30,11 @@ export default function MapPicker({ latitude, longitude, onLocationSelect }: Pro
     const map = L.map(containerRef.current).setView([latitude, longitude], 13)
     mapRef.current = map
 
-    // Add tile layer
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    // Add Google Maps tile layer
+    L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+      subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+      attribution: '&copy; Google Maps',
+      maxZoom: 20,
     }).addTo(map)
 
     // Add draggable marker

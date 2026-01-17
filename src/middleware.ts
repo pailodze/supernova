@@ -6,7 +6,7 @@ export function middleware(request: NextRequest) {
   const sessionCookie = request.cookies.get('session')
 
   // Public routes that don't require authentication
-  const publicRoutes = ['/login', '/verify', '/api/auth/send-otp', '/api/auth/verify-otp', '/jobs', '/api/jobs']
+  const publicRoutes = ['/login', '/verify', '/api/auth/send-otp', '/api/auth/verify-otp', '/jobs', '/api/jobs', '/tasks', '/api/tasks']
 
   // Admin routes that require admin privileges
   const adminRoutes = ['/admin', '/api/admin']
