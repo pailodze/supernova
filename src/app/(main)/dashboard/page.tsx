@@ -1,7 +1,7 @@
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { createServerSupabaseClient } from '@/lib/supabase-server'
-import type { Job, Course, Task } from '@/lib/supabase'
+import type { Job, Course, Task, StudentSkill } from '@/lib/supabase'
 import DashboardTabs from '@/components/DashboardTabs'
 import CertificateRequestCard from '@/components/CertificateRequestCard'
 
@@ -40,6 +40,29 @@ async function getStudentCourses(studentId: string): Promise<{ ids: string[], na
     return course?.name
   }).filter(Boolean) as string[]
   return { ids, names }
+}
+
+async function getStudentSkills(studentId: string): Promise<StudentSkill[]> {
+  const supabase = createServerSupabaseClient()
+  const { data, error } = await supabase
+    .from('student_skills')
+    .select(`
+      *,
+      skill:skills (
+        id,
+        name,
+        icon
+      )
+    `)
+    .eq('student_id', studentId)
+    .order('proficiency_level', { ascending: false })
+
+  if (error) {
+    console.error('Error fetching student skills:', error)
+    return []
+  }
+
+  return data || []
 }
 
 type JobWithCourses = Job & {
@@ -166,11 +189,12 @@ export default async function DashboardPage() {
     redirect('/login')
   }
 
-  // Get student's courses and filter jobs/tasks accordingly
+  // Get student's courses, skills, and filter jobs/tasks accordingly
   const studentCourses = await getStudentCourses(session.studentId)
-  const [jobs, tasks] = await Promise.all([
+  const [jobs, tasks, studentSkills] = await Promise.all([
     getJobs(studentCourses.ids),
     getTasks(studentCourses.ids),
+    getStudentSkills(session.studentId),
   ])
   
 
@@ -187,16 +211,30 @@ export default async function DashboardPage() {
               {student.group_name}
             </p>
           </div>
-          <div className="text-right">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-100 dark:bg-cyan-900/30 rounded-xl">
-              <span className="text-2xl">⭐</span>
-              <div>
-                <p className="text-sm text-cyan-600 dark:text-cyan-400">დონე</p>
-                <p className="text-xl font-bold text-cyan-800 dark:text-cyan-200">
-                  {student.coins || 0}
+          <div className="flex flex-wrap gap-2 justify-end">
+            {studentSkills.length > 0 ? (
+              studentSkills.map((ss) => (
+                <div
+                  key={ss.id}
+                  className="inline-flex items-center gap-2 px-3 py-2 bg-cyan-100 dark:bg-cyan-900/30 rounded-xl"
+                >
+                  <span className="text-xl">{ss.skill?.icon || '⭐'}</span>
+                  <div>
+                    <p className="text-xs text-cyan-600 dark:text-cyan-400">{ss.skill?.name}</p>
+                    <p className="text-lg font-bold text-cyan-800 dark:text-cyan-200">
+                      Lvl {ss.proficiency_level}
+                    </p>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-100 dark:bg-zinc-700/30 rounded-xl">
+                <span className="text-xl">🎯</span>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                  უნარები ჯერ არ გაქვს
                 </p>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

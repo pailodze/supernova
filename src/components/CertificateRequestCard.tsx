@@ -130,7 +130,8 @@ export default function CertificateRequestCard({ studentId }: Props) {
     }
   }
 
-  const canRequest = !request || request.status === 'rejected' || request.status === 'delivered'
+  // Only allow new requests when: no request exists OR previous request was rejected
+  const canRequest = !request || request.status === 'rejected'
 
   const getStatusBadge = () => {
     if (!request) return null
@@ -223,7 +224,7 @@ export default function CertificateRequestCard({ studentId }: Props) {
         </div>
         {/* Mobile: show status and button below separator */}
         <div className="sm:hidden mt-3 pt-3 border-t border-white/20 flex items-center justify-between">
-          <div>{getStatusBadge()}</div>
+          <div>{request && !canRequest && getStatusBadge()}</div>
           {canRequest && (
             <button
               onClick={() => setShowModal(true)}
@@ -236,10 +237,19 @@ export default function CertificateRequestCard({ studentId }: Props) {
             </button>
           )}
         </div>
-        {/* Desktop: show status below for non-pending when there's extra info */}
-        {request && request.status !== 'pending' && (
+        {/* Desktop: show extra info below for sent/rejected statuses */}
+        {request && request.status === 'sent' && request.estimated_arrival && (
           <div className="hidden sm:block mt-3 pt-3 border-t border-white/20">
-            {getStatusBadge()}
+            <p className="text-sm text-indigo-100">
+              სავარაუდო მიწოდება: {formatDate(request.estimated_arrival)}
+            </p>
+          </div>
+        )}
+        {request && request.status === 'rejected' && request.rejection_reason && (
+          <div className="hidden sm:block mt-3 pt-3 border-t border-white/20">
+            <p className="text-sm text-red-200">
+              უარყოფის მიზეზი: {request.rejection_reason}
+            </p>
           </div>
         )}
       </div>

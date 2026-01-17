@@ -22,6 +22,8 @@ export default function TaskApplyButton({
   const [applying, setApplying] = useState(false)
   const [updating, setUpdating] = useState(false)
   const [error, setError] = useState('')
+  const [showSubmissionModal, setShowSubmissionModal] = useState(false)
+  const [submission, setSubmission] = useState('')
 
   const isExpired = deadline ? new Date(deadline) < new Date() : false
 
@@ -69,7 +71,7 @@ export default function TaskApplyButton({
     }
   }
 
-  const handleUpdateStatus = async (newStatus: ApplicationStatus) => {
+  const handleUpdateStatus = async (newStatus: ApplicationStatus, submissionText?: string) => {
     setError('')
     setUpdating(true)
 
@@ -77,7 +79,7 @@ export default function TaskApplyButton({
       const response = await fetch(`/api/tasks/${taskId}/apply`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ status: newStatus }),
+        body: JSON.stringify({ status: newStatus, submission: submissionText }),
       })
 
       const data = await response.json()
@@ -88,11 +90,23 @@ export default function TaskApplyButton({
       }
 
       setApplicationStatus(newStatus)
+      if (newStatus === 'done') {
+        setShowSubmissionModal(false)
+        setSubmission('')
+      }
     } catch {
       setError('ქსელის შეცდომა. სცადეთ თავიდან.')
     } finally {
       setUpdating(false)
     }
+  }
+
+  const handleSubmitDone = () => {
+    if (!submission.trim()) {
+      setError('გთხოვთ მიუთითოთ შესრულებული სამუშაოს აღწერა')
+      return
+    }
+    handleUpdateStatus('done', submission.trim())
   }
 
   const handleCancel = async () => {
@@ -283,26 +297,40 @@ export default function TaskApplyButton({
           {/* Status Controls - only show if student can modify */}
           {canModify && (
             <div className="space-y-3">
-              <div className="flex items-center justify-between gap-4">
-                <div className="flex-1">
-                  <label className="block text-sm text-zinc-600 dark:text-zinc-400 mb-1">
-                    სტატუსი:
-                  </label>
-                  <select
-                    value={applicationStatus || 'in_progress'}
-                    onChange={(e) => handleUpdateStatus(e.target.value as ApplicationStatus)}
+              <div className="flex items-center gap-3">
+                {/* Pause button - only visible when in_progress */}
+                {applicationStatus === 'in_progress' && (
+                  <button
+                    onClick={() => handleUpdateStatus('paused')}
                     disabled={updating}
-                    className="w-full px-3 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50"
+                    className="flex-1 px-4 py-2 font-medium bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 hover:bg-yellow-200 dark:hover:bg-yellow-900/50 rounded-lg transition disabled:opacity-50"
                   >
-                    <option value="in_progress">🔄 მიმდინარეობს</option>
-                    <option value="paused">⏸️ შეჩერებული</option>
-                    <option value="done">✅ დასრულებული</option>
-                  </select>
-                </div>
+                    ⏸️ შეჩერება
+                  </button>
+                )}
+                {/* Resume button - only visible when paused */}
+                {applicationStatus === 'paused' && (
+                  <button
+                    onClick={() => handleUpdateStatus('in_progress')}
+                    disabled={updating}
+                    className="flex-1 px-4 py-2 font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-900/50 rounded-lg transition disabled:opacity-50"
+                  >
+                    🔄 გაგრძელება
+                  </button>
+                )}
+                {/* Mark as done button */}
+                <button
+                  onClick={() => setShowSubmissionModal(true)}
+                  disabled={updating}
+                  className="flex-1 px-4 py-2 font-medium bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 hover:bg-green-200 dark:hover:bg-green-900/50 rounded-lg transition disabled:opacity-50"
+                >
+                  ✅ დასრულება
+                </button>
+                {/* Cancel button */}
                 <button
                   onClick={handleCancel}
                   disabled={updating}
-                  className="px-4 py-2 text-sm font-medium text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 hover:bg-red-50 dark:hover:bg-red-900/20 rounded-lg transition disabled:opacity-50 self-end"
+                  className="px-4 py-2 text-sm font-medium text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 hover:bg-red-50 dark:hover:bg-red-900/20 rounded-lg transition disabled:opacity-50"
                 >
                   გაუქმება
                 </button>
@@ -322,6 +350,55 @@ export default function TaskApplyButton({
               </button>
             </div>
           )}
+        </div>
+      )}
+
+      {/* Submission Modal */}
+      {showSubmissionModal && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white dark:bg-zinc-800 rounded-xl shadow-xl max-w-lg w-full p-6">
+            <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+              დავალების დასრულება
+            </h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
+              გთხოვთ მიუთითოთ შესრულებული სამუშაოს დეტალები, ლინკები ან სხვა წყაროები
+            </p>
+
+            <textarea
+              value={submission}
+              onChange={(e) => setSubmission(e.target.value)}
+              placeholder="მაგ: GitHub ლინკი, Google Drive ლინკი, აღწერა..."
+              rows={5}
+              className="w-full px-4 py-3 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none"
+            />
+
+            {error && (
+              <div className="mt-3 p-3 rounded-lg bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 text-sm">
+                {error}
+              </div>
+            )}
+
+            <div className="flex gap-3 mt-4">
+              <button
+                onClick={() => {
+                  setShowSubmissionModal(false)
+                  setSubmission('')
+                  setError('')
+                }}
+                disabled={updating}
+                className="flex-1 px-4 py-2 font-medium bg-zinc-100 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-600 rounded-lg transition disabled:opacity-50"
+              >
+                გაუქმება
+              </button>
+              <button
+                onClick={handleSubmitDone}
+                disabled={updating || !submission.trim()}
+                className="flex-1 px-4 py-2 font-medium bg-green-600 text-white hover:bg-green-700 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {updating ? 'იგზავნება...' : '✅ გაგზავნა'}
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </div>

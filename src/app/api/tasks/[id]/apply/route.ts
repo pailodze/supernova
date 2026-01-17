@@ -161,12 +161,17 @@ async function updateTaskApplicationHandler(
     }
 
     const body = await request.json()
-    const { status } = body
+    const { status, submission } = body
 
     // Validate status - students can only set these statuses
     const allowedStatuses = ['in_progress', 'paused', 'done']
     if (!allowedStatuses.includes(status)) {
       return NextResponse.json({ error: 'Invalid status' }, { status: 400 })
+    }
+
+    // Require submission when marking as done
+    if (status === 'done' && (!submission || !submission.trim())) {
+      return NextResponse.json({ error: 'Submission is required when marking task as done' }, { status: 400 })
     }
 
     const supabase = createServerSupabaseClient()
@@ -189,12 +194,19 @@ async function updateTaskApplicationHandler(
     }
 
     // Update the application status
+    const updateData: { status: string; updated_at: string; submission?: string } = {
+      status,
+      updated_at: new Date().toISOString()
+    }
+
+    // Include submission if provided (when marking as done)
+    if (submission) {
+      updateData.submission = submission.trim()
+    }
+
     const { data: application, error: updateError } = await supabase
       .from('task_applications')
-      .update({
-        status,
-        updated_at: new Date().toISOString()
-      })
+      .update(updateData)
       .eq('id', existingApplication.id)
       .select()
       .single()
