@@ -120,7 +120,7 @@ export async function GET(
 
     const { data: application } = await supabase
       .from('task_applications')
-      .select('id, status, created_at')
+      .select('id, status, submission, created_at')
       .eq('student_id', session.studentId)
       .eq('task_id', taskId)
       .single()

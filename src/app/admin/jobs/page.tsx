@@ -222,6 +222,17 @@ export default function AdminJobsPage() {
     }
   }
 
+  const handleDuplicate = async (id: string) => {
+    try {
+      const response = await fetch(`/api/jobs/${id}/duplicate`, { method: 'POST' })
+      if (response.ok) {
+        await fetchJobs()
+      }
+    } catch {
+      console.error('Failed to duplicate job')
+    }
+  }
+
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-6">
@@ -585,6 +596,12 @@ export default function AdminJobsPage() {
                     }`}
                   >
                     {job.is_active ? 'გათიშვა' : 'ჩართვა'}
+                  </button>
+                  <button
+                    onClick={() => handleDuplicate(job.id)}
+                    className="px-3 py-1.5 text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 hover:bg-blue-200 dark:hover:bg-blue-900/50 rounded-lg transition"
+                  >
+                    დუბლირება
                   </button>
                   <button
                     onClick={() => handleEdit(job)}

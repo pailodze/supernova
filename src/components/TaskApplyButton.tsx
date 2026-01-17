@@ -18,6 +18,7 @@ export default function TaskApplyButton({
 }: TaskApplyButtonProps) {
   const [applied, setApplied] = useState(false)
   const [applicationStatus, setApplicationStatus] = useState<ApplicationStatus | null>(null)
+  const [savedSubmission, setSavedSubmission] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
   const [applying, setApplying] = useState(false)
   const [updating, setUpdating] = useState(false)
@@ -38,6 +39,7 @@ export default function TaskApplyButton({
       setApplied(data.applied)
       if (data.application) {
         setApplicationStatus(data.application.status)
+        setSavedSubmission(data.application.submission || null)
       }
     } catch {
       console.error('Failed to check application status')
@@ -90,7 +92,8 @@ export default function TaskApplyButton({
       }
 
       setApplicationStatus(newStatus)
-      if (newStatus === 'done') {
+      if (newStatus === 'done' && submissionText) {
+        setSavedSubmission(submissionText)
         setShowSubmissionModal(false)
         setSubmission('')
       }
@@ -294,6 +297,16 @@ export default function TaskApplyButton({
             </div>
           )}
 
+          {/* Display saved submission when done */}
+          {applicationStatus === 'done' && savedSubmission && (
+            <div className="p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
+              <p className="text-xs font-medium text-blue-700 dark:text-blue-300 mb-1">თქვენი პასუხი:</p>
+              <p className="text-sm text-blue-900 dark:text-blue-100 whitespace-pre-wrap break-words">
+                {savedSubmission}
+              </p>
+            </div>
+          )}
+
           {/* Status Controls - only show if student can modify */}
           {canModify && (
             <div className="space-y-3">
@@ -318,14 +331,29 @@ export default function TaskApplyButton({
                     🔄 გაგრძელება
                   </button>
                 )}
-                {/* Mark as done button */}
-                <button
-                  onClick={() => setShowSubmissionModal(true)}
-                  disabled={updating}
-                  className="flex-1 px-4 py-2 font-medium bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 hover:bg-green-200 dark:hover:bg-green-900/50 rounded-lg transition disabled:opacity-50"
-                >
-                  ✅ დასრულება
-                </button>
+                {/* Mark as done button - only when not done yet */}
+                {applicationStatus !== 'done' && (
+                  <button
+                    onClick={() => setShowSubmissionModal(true)}
+                    disabled={updating}
+                    className="flex-1 px-4 py-2 font-medium bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 hover:bg-green-200 dark:hover:bg-green-900/50 rounded-lg transition disabled:opacity-50"
+                  >
+                    ✅ დასრულება
+                  </button>
+                )}
+                {/* Change submission button - only when done */}
+                {applicationStatus === 'done' && (
+                  <button
+                    onClick={() => {
+                      setSubmission(savedSubmission || '')
+                      setShowSubmissionModal(true)
+                    }}
+                    disabled={updating}
+                    className="flex-1 px-4 py-2 font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-900/50 rounded-lg transition disabled:opacity-50"
+                  >
+                    ✏️ პასუხის შეცვლა
+                  </button>
+                )}
                 {/* Cancel button */}
                 <button
                   onClick={handleCancel}

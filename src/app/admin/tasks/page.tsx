@@ -183,6 +183,17 @@ export default function AdminTasksPage() {
     }
   }
 
+  const handleDuplicate = async (id: string) => {
+    try {
+      const response = await fetch(`/api/tasks/${id}/duplicate`, { method: 'POST' })
+      if (response.ok) {
+        await fetchTasks()
+      }
+    } catch {
+      console.error('Failed to duplicate task')
+    }
+  }
+
   const GEORGIAN_MONTHS = [
     'იანვარი', 'თებერვალი', 'მარტი', 'აპრილი', 'მაისი', 'ივნისი',
     'ივლისი', 'აგვისტო', 'სექტემბერი', 'ოქტომბერი', 'ნოემბერი', 'დეკემბერი'
@@ -471,6 +482,12 @@ export default function AdminTasksPage() {
                     }`}
                   >
                     {task.is_active ? 'გათიშვა' : 'ჩართვა'}
+                  </button>
+                  <button
+                    onClick={() => handleDuplicate(task.id)}
+                    className="px-3 py-1.5 text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 hover:bg-blue-200 dark:hover:bg-blue-900/50 rounded-lg transition"
+                  >
+                    დუბლირება
                   </button>
                   <button
                     onClick={() => handleEdit(task)}
