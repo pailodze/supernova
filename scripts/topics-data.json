@@ -1,0 +1,3593 @@
+[
+  {
+    "id": 1,
+    "name": "გაცნობითი შეხვედრა / რეგისტრაცია",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 1
+  },
+  {
+    "id": 3,
+    "name": "ინგლისური ენა / გაცნობითი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 9
+  },
+  {
+    "id": 4,
+    "name": "ინგლისური ენა / გაცნობითი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 10
+  },
+  {
+    "id": 5,
+    "name": "ინგლისური ენა / გაცნობითი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 11
+  },
+  {
+    "id": 6,
+    "name": "Getting to know each other",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 9
+  },
+  {
+    "id": 7,
+    "name": "Getting to know each other",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 10
+  },
+  {
+    "id": 8,
+    "name": "Getting to know each other",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 11
+  },
+  {
+    "id": 11,
+    "name": "როგორ წავიკითხოთ და ვწეროთ HTML",
+    "theoryVideo": "https://www.youtube.com/embed/mZ2V58M5JS0",
+    "miroLink": "https://miro.com/app/board/uXjVP41kmfg=/",
+    "technologyId": 4
+  },
+  {
+    "id": 12,
+    "name": "HTML დოკუმენტის ანატომია",
+    "theoryVideo": "https://www.youtube.com/embed/oqhb4pFxjXM",
+    "miroLink": "https://miro.com/app/board/uXjVP1C0QMY=/",
+    "technologyId": 4
+  },
+  {
+    "id": 13,
+    "name": "დიზაინის მიმართულებები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 14,
+    "name": "რა არის UI/UX დიზაინი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 15,
+    "name": "Present Simple / Present Continuous Part 1",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 16,
+    "name": "Present Simple / Present Continuous Part 2",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 17,
+    "name": "Present Simple / Present Continuous Part 1",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 18,
+    "name": "Present Simple / Present Continuous Part 2",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 19,
+    "name": "Present Simple / Present Continuous Part 1",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 20,
+    "name": "Present Simple / Present Continuous Part 2",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 21,
+    "name": "ტექსტური ინფორმაცია HTML-ში",
+    "theoryVideo": "https://www.youtube.com/embed/l3uINuU-yAo",
+    "miroLink": "https://miro.com/app/board/uXjVPz5JxMA=/?share_link_id=676749159974",
+    "technologyId": 4
+  },
+  {
+    "id": 22,
+    "name": "ლინკები, URL-ები და Path-ები",
+    "theoryVideo": "https://www.youtube.com/embed/CSY0mCO2yN0",
+    "miroLink": "https://miro.com/app/board/uXjVPwXQzcc=/?share_link_id=412564783910",
+    "technologyId": 4
+  },
+  {
+    "id": 23,
+    "name": "შესავალი UI/UX დიზაინერის ხელსაწყოებში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 24,
+    "name": "რა არის გრაფიკული დიზაინი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 25,
+    "name": "Past Simple / Past Continuous ( Part 1 )",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 26,
+    "name": "Past Simple / Past Continuous ( Part 2 )",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 27,
+    "name": "Past Simple",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 28,
+    "name": "Irregular Verbs",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 29,
+    "name": "Present Tenses - Practice ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 30,
+    "name": "Sentence Structure",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 31,
+    "name": "შესავალი გრაფიკული დიზაინერის ხელსაწყოებში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 32,
+    "name": "რა არის Motion დიზაინი",
+    "theoryVideo": "https://www.youtube.com/embed/2vq1KwganvU?si=lrPQH23-fbpEyt4p",
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 33,
+    "name": "Embed: ფოტოები, აუდიო-ვიდეო, iframe",
+    "theoryVideo": "https://www.youtube.com/watch?v=Z-mRk0Xkd68",
+    "miroLink": "https://miro.com/app/board/uXjVPx_saHM=/",
+    "technologyId": 4
+  },
+  {
+    "id": 34,
+    "name": "ცხრილები",
+    "theoryVideo": "https://www.youtube.com/watch?v=HkgqEofDkMY",
+    "miroLink": "https://miro.com/app/board/uXjVPuD4TOM=/",
+    "technologyId": 4
+  },
+  {
+    "id": 35,
+    "name": "Past Simple, Irregular verbs",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 36,
+    "name": "Phrases for dialogue",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 37,
+    "name": "Past Continuous",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 38,
+    "name": "Linking words",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 39,
+    "name": "Future Tenses (Part 1) ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 40,
+    "name": "Future Tenses (Part 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 41,
+    "name": "Quiz 1",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 42,
+    "name": "Quiz 1 ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 43,
+    "name": "Quiz 1",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 44,
+    "name": "შესავალი Motion დიზაინერის ხელსაწყოებში",
+    "theoryVideo": "https://www.youtube.com/embed/2vq1KwganvU?si=OdXeKn97AX91Xd4P",
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 45,
+    "name": "რა არის 3D დიზაინი",
+    "theoryVideo": "https://www.youtube.com/embed/ZsRAx6P43lU?si=3_ZODnDSsrxpV7ms",
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 46,
+    "name": "ფორმები",
+    "theoryVideo": "https://www.youtube.com/embed/TmQhMVZC8so?si=5gg-MQqDqt2oinO7",
+    "miroLink": "https://miro.com/app/board/uXjVPtgVav8=/\\n",
+    "technologyId": 4
+  },
+  {
+    "id": 47,
+    "name": "სემანტიკური ტეგები და HTML-ის ვალიდაცია",
+    "theoryVideo": "https://www.youtube.com/embed/V2Zs3uZWp_0?si=tKvJwtx-o1izmwIg",
+    "miroLink": "https://miro.com/app/board/uXjVPt2v948=/?share_link_id=638342050808",
+    "technologyId": 4
+  },
+  {
+    "id": 51,
+    "name": "Future Tenses",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 52,
+    "name": "Presentations",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 53,
+    "name": "Present Perfect Tense",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 54,
+    "name": "Presentations",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 55,
+    "name": "Past Continuous",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 56,
+    "name": "Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 58,
+    "name": "Present Continuous",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 61,
+    "name": "Present Simple",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 62,
+    "name": "როგორ წავიკითხოთ და ვწეროთ CSS",
+    "theoryVideo": "https://www.youtube.com/watch?v=NiGccOJJ3Kc",
+    "miroLink": "https://miro.com/app/board/uXjVPtLXetE=/",
+    "technologyId": 5
+  },
+  {
+    "id": 63,
+    "name": "შესავალი 3D დიზაინერის ხელსაწყოებში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 64,
+    "name": "რა არის Game დიზაინი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 65,
+    "name": "Box მოდელი",
+    "theoryVideo": "https://www.youtube.com/embed/W-VzElZkeOE",
+    "miroLink": "https://miro.com/app/board/uXjVPq1g-bg=/",
+    "technologyId": 5
+  },
+  {
+    "id": 66,
+    "name": "0-ები და 1-ები",
+    "theoryVideo": "https://www.youtube.com/watch?v=t282DTJqb4Q",
+    "miroLink": "https://miro.com/app/board/uXjVPqBC23U=/",
+    "technologyId": 1
+  },
+  {
+    "id": 67,
+    "name": "რა არის 3D/2D ანიმაცია",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 68,
+    "name": "შესავალი 3D/2D ანიმატორების ხელსაწყოებში",
+    "theoryVideo": "https://www.youtube.com/embed/8r5RtRW83Mk?si=c5uUmwpzKg25AWF1",
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 70,
+    "name": "Future Tenses",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 71,
+    "name": "Listening",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 72,
+    "name": "Future Continuous",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 73,
+    "name": "Proverbs and Listening",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 74,
+    "name": "Present Perfect Continuous",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 75,
+    "name": "Perfect Simple or Perfect Continuous ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 78,
+    "name": "Past Simple",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 79,
+    "name": "Future Continuous",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 80,
+    "name": "Building Conversations",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 81,
+    "name": "Listening Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 82,
+    "name": "Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 83,
+    "name": "Past Perfect Tense",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 84,
+    "name": "Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 87,
+    "name": "Future Tenses",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 88,
+    "name": "Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 89,
+    "name": "რა არის VFX არტისტი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 90,
+    "name": "შესავალი VFX არტისტის ხელსაწყოებში",
+    "theoryVideo": "https://www.youtube.com/embed/Zb8xc_eJT_Q?si=JNotSRYtaqBUpJbP",
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 91,
+    "name": "განზომილებები, ზომები და სხვა მნიშვნელობები",
+    "theoryVideo": "https://www.youtube.com/watch?v=mYq2nJiWLJo",
+    "miroLink": "https://miro.com/app/board/uXjVPpKp6p4=/",
+    "technologyId": 5
+  },
+  {
+    "id": 92,
+    "name": "Background (ფონი)",
+    "theoryVideo": "https://www.youtube.com/watch?v=j4T71YCNncE",
+    "miroLink": "https://miro.com/app/board/uXjVPpZfJM8=/",
+    "technologyId": 5
+  },
+  {
+    "id": 93,
+    "name": "Vocabulary Building",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 94,
+    "name": "Listening Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 95,
+    "name": "Present Perfect Tense",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 96,
+    "name": "Reading Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 97,
+    "name": "Past Perfect Continuous",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 98,
+    "name": "Discussion",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 100,
+    "name": "Revision / Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 101,
+    "name": "რა არის ვიდეო ედითინგი და ქონთენთ ქრიეიშენი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 102,
+    "name": "შესავალი ვიდეო ედიტორის ხელსაწყოებში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 103,
+    "name": "რა არის ინტერიერის დიზაინი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 104,
+    "name": "შესავალი ინტერიერის დიზაინერის ხელსაწყოებში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 106,
+    "name": "Film screening / Discussion (Part 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 107,
+    "name": "Film screening / Discussion  (Part 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 108,
+    "name": "სელექტორები და კომბინატორები Part 1",
+    "theoryVideo": "https://www.youtube.com/watch?v=yVvyB56GanY",
+    "miroLink": "https://miro.com/app/board/uXjVPsiRZYo=/",
+    "technologyId": 5
+  },
+  {
+    "id": 109,
+    "name": "Film screening / Discussion (Part 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 110,
+    "name": "Cascade, Specificity, Inheritance",
+    "theoryVideo": "https://www.youtube.com/watch?v=PQg2YEAVMxo",
+    "miroLink": "https://miro.com/app/board/uXjVPtO1WOY=/",
+    "technologyId": 5
+  },
+  {
+    "id": 111,
+    "name": "Film screening / Discussion  (Part 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 112,
+    "name": "Normal flow, Position",
+    "theoryVideo": "https://www.youtube.com/watch?v=D9uu4MlmX2Y",
+    "miroLink": "https://miro.com/app/board/uXjVPmXfkVc=/",
+    "technologyId": 5
+  },
+  {
+    "id": 113,
+    "name": "Film screening / Discussion (Part 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 114,
+    "name": ".Film screening / Discussion (Part 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 116,
+    "name": "Linking Words",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 117,
+    "name": "Flexbox",
+    "theoryVideo": "https://www.youtube.com/watch?v=a6n6OeWTLd8",
+    "miroLink": "https://yoksel.github.io/flex-cheatsheet",
+    "technologyId": 5
+  },
+  {
+    "id": 118,
+    "name": "როგორ გამოვიყენოთ Figma",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 1
+  },
+  {
+    "id": 119,
+    "name": "Background დავალების მასტერკლასი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 1
+  },
+  {
+    "id": 120,
+    "name": "Quiz 2",
+    "theoryVideo": "",
+    "miroLink": "",
+    "technologyId": 12
+  },
+  {
+    "id": 121,
+    "name": "Quiz 2",
+    "theoryVideo": "",
+    "miroLink": "",
+    "technologyId": 14
+  },
+  {
+    "id": 122,
+    "name": "Quiz 2",
+    "theoryVideo": "",
+    "miroLink": "",
+    "technologyId": 13
+  },
+  {
+    "id": 123,
+    "name": "Quiz 3",
+    "theoryVideo": "",
+    "miroLink": "",
+    "technologyId": 12
+  },
+  {
+    "id": 124,
+    "name": "Quiz 3",
+    "theoryVideo": "",
+    "miroLink": "",
+    "technologyId": 13
+  },
+  {
+    "id": 125,
+    "name": "Quiz 3",
+    "theoryVideo": "",
+    "miroLink": "",
+    "technologyId": 14
+  },
+  {
+    "id": 126,
+    "name": "სელექტორები (ფსევდო კლასები და ელემენტები) ნაწილი 2",
+    "theoryVideo": "https://www.youtube.com/watch?v=ajS5w--PS5o",
+    "miroLink": "https://miro.com/app/board/uXjVPsiRZYo=/",
+    "technologyId": 5
+  },
+  {
+    "id": 127,
+    "name": "ხშირად გამოყენებული CSS ბრძანებები",
+    "theoryVideo": "https://www.youtube.com/watch?v=Ufs_6-spqis",
+    "miroLink": "https://miro.com/app/board/uXjVPk4vAaY=/",
+    "technologyId": 5
+  },
+  {
+    "id": 129,
+    "name": "Present perfect tense",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 130,
+    "name": "რა არის ფერები?",
+    "theoryVideo": "https://www.youtube.com/embed/drVMz_-B1bM?si=2p2W319XS5iQgYsW",
+    "miroLink": "https://miro.com/app/board/uXjVN89ME70=/?share_link_id=542401932662",
+    "technologyId": 2
+  },
+  {
+    "id": 131,
+    "name": "რა არის ტიპოგრაფია?",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 132,
+    "name": "Listening/Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 133,
+    "name": "Present Perfect Continuous",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 134,
+    "name": "Speaking/Writing Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 135,
+    "name": "Future Perfect Tense",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 136,
+    "name": "Listening/Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 139,
+    "name": "Present Perfect Tense",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 140,
+    "name": "Vocabulary Building",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 141,
+    "name": "Possessive Adjectives and Pronouns",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 142,
+    "name": "Comparative and Superlative Adjectives",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 143,
+    "name": "Future Perfect Tense",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 144,
+    "name": "Listening Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 145,
+    "name": "Future Perfect Continuous ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 146,
+    "name": "Listening: Podcast / Discussion",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 149,
+    "name": "Present Perfect Continuous",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 150,
+    "name": "Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 151,
+    "name": "რა არის გრიდები?",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 152,
+    "name": "შესავალი კომპოზიციაში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 153,
+    "name": "CSS კოდის ორგანიზება",
+    "theoryVideo": "https://www.youtube.com/watch?v=Q7b9maZN39o",
+    "miroLink": "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing",
+    "technologyId": 5
+  },
+  {
+    "id": 154,
+    "name": "ანიმაციები",
+    "theoryVideo": "https://www.youtube.com/watch?v=SAVnkHaS79o",
+    "miroLink": "https://miro.com/app/board/uXjVPgZx6N0=/",
+    "technologyId": 5
+  },
+  {
+    "id": 155,
+    "name": "როგორ ავირჩიოთ დიზაინის მიმართულება",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 156,
+    "name": "პორტფოლიოს შექმნა და სტანდარტები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 157,
+    "name": "Articles / Zero Article",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 158,
+    "name": "Used to do / Would do / Be used to doing",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 159,
+    "name": "Future Perfect Continuous",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 160,
+    "name": "Listening and Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 161,
+    "name": "Event Analysis / Discussion ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 162,
+    "name": "Listening Practice: Podcast / Discussion ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 163,
+    "name": "Perfect Tenses: Comparison and Revision",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 164,
+    "name": "Vocabulary and Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 165,
+    "name": "რესპონსიული დიზაინი, Media query",
+    "theoryVideo": "https://www.youtube.com/watch?v=Ralz66p3gSE",
+    "miroLink": "https://miro.com/app/board/uXjVMeXIKY4=/",
+    "technologyId": 5
+  },
+  {
+    "id": 166,
+    "name": "როგორ გამოვიყენოთ GIT",
+    "theoryVideo": "https://www.youtube.com/watch?v=Kt53lT95zck",
+    "miroLink": null,
+    "technologyId": 6
+  },
+  {
+    "id": 167,
+    "name": "ნეთვორქინგი და პროფესიული განვითარება",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 168,
+    "name": "დამსაქმებელთან მუშაობა და პროექტის მართვა",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 169,
+    "name": "Vocabulary and Grammar Revision ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 170,
+    "name": "Prepositions",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 171,
+    "name": "Prepositions and Listening Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 172,
+    "name": "Discussion / Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 173,
+    "name": "Zero and First Conditionals",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 174,
+    "name": "Second and Third Conditionals",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 175,
+    "name": "Future Perfect Simple",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 176,
+    "name": "Future Perfect OR Future Continuous",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 177,
+    "name": "შესავალი Shell-ში",
+    "theoryVideo": "https://www.youtube.com/watch?v=3ympiDTx0v4",
+    "miroLink": null,
+    "technologyId": 20
+  },
+  {
+    "id": 178,
+    "name": "შესავალი პროგრამირებაში",
+    "theoryVideo": "https://www.youtube.com/watch?v=7AprupTWYf8",
+    "miroLink": "https://miro.com/app/board/uXjVMck8Wbs=/",
+    "technologyId": 3
+  },
+  {
+    "id": 184,
+    "name": "Introduction: Hiring Process",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVN2JCm9A=/",
+    "technologyId": 19
+  },
+  {
+    "id": 185,
+    "name": "Nouns: Singular/Plural",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 186,
+    "name": "Comparison ოპერატორები",
+    "theoryVideo": "https://youtube.com/embed/yZlkEKN-804",
+    "miroLink": "https://miro.com/app/board/uXjVMbTf1R4=",
+    "technologyId": 3
+  },
+  {
+    "id": 187,
+    "name": "კომპოზიციის აწყობის პრაქტიკული მეთოდები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 188,
+    "name": "შეჯამება პროფესიულ მიმართულებამდეwehgvxwcfyetcftwedyvwuetdfweytdfwytedfwytdfwytedfwytdfwytdfwyetdf",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 189,
+    "name": "ლოგიკური ოპერატორები",
+    "theoryVideo": "https://www.youtube.com/watch?v=qdSTTGQvha8",
+    "miroLink": "https://miro.com/app/board/uXjVMaBIRBY=/",
+    "technologyId": 3
+  },
+  {
+    "id": 190,
+    "name": "Use of possessive case",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 191,
+    "name": "Word building and discussion",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 192,
+    "name": "Vocabulary practice: Job search",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 193,
+    "name": "Speaking: Discussion / Debates",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 194,
+    "name": "Speaking: Conversation vocabulary and expressions",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 195,
+    "name": "Articles / Zero article",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 196,
+    "name": "Speaking activity",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 197,
+    "name": "CD-CV formats",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVN2JCm9A=/",
+    "technologyId": 19
+  },
+  {
+    "id": 199,
+    "name": "Summer Language Holiday Presentation",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 21
+  },
+  {
+    "id": 200,
+    "name": "Quantifiers (Much/Many, Little/Few)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 201,
+    "name": "Difference Between: Look, Be like, Look like",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 202,
+    "name": "Articles: (A, An, The and Zero)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 203,
+    "name": "Personality Quiz and Discussion ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 204,
+    "name": "Speaking: Discussion / Debates",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 205,
+    "name": "Vocabulary Building: The career ladder ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 206,
+    "name": "Vocabulary Building and Discussion",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 207,
+    "name": "Prepositions",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 208,
+    "name": "CD-Evaluation of your CVs ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 19
+  },
+  {
+    "id": 209,
+    "name": "პირობითი ბრძანებები",
+    "theoryVideo": "https://www.youtube.com/watch?v=In_2sHPWIdI",
+    "miroLink": "https://miro.com/app/board/uXjVMZ7t0y4=/",
+    "technologyId": 3
+  },
+  {
+    "id": 210,
+    "name": "ინფორმაციის ტიპები",
+    "theoryVideo": "https://www.youtube.com/watch?v=Xq29RW2fHGM",
+    "miroLink": "https://miro.com/app/board/uXjVMYtvKsk=/",
+    "technologyId": 3
+  },
+  {
+    "id": 211,
+    "name": "ვისწავლოთ Figma",
+    "theoryVideo": "https://www.youtube.com/embed/ecPHc40Xqck?si=Yy4NZGAlmWc_-7be",
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 212,
+    "name": "შესავალი გრაფიკულ დიზაინში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 23
+  },
+  {
+    "id": 213,
+    "name": "შესავალი Motion დიზაინში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 214,
+    "name": "შესავალი 3D დიზაინში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 215,
+    "name": "შესავალი ინტერიერის დიზაინში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 216,
+    "name": "შესავალი ქონთენთ ქრიეიშენში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 218,
+    "name": "Vocabulary for CV (part 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 219,
+    "name": "UI დიზაინის გაიდლაინები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 220,
+    "name": "Vocabulary for CV (part 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 221,
+    "name": "Blender-ის ინტერფეისი და ნავიგაცია (ნაწილი 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 222,
+    "name": "რა არის ინტეიერის დიზაინი და მისი ფუნდამენტები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 223,
+    "name": "შესავალი After Effects-ში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 224,
+    "name": "Conditionals Revision",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 225,
+    "name": "Vlog-ის გადაღების ფუნდამენტები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 226,
+    "name": "Vocabulary for CV",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 227,
+    "name": "გრაფიკული დიზაინის ისტორია",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 23
+  },
+  {
+    "id": 228,
+    "name": "Vocabulary for CV (part 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 229,
+    "name": "Vocabulary for CV (part 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 230,
+    "name": "Vocabulary for CV",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 231,
+    "name": "CD-Professional Summary",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 19
+  },
+  {
+    "id": 232,
+    "name": "შესავალი იტრეაციებში",
+    "theoryVideo": "https://www.youtube.com/watch?v=N-WEaMCPC08",
+    "miroLink": "https://miro.com/app/board/uXjVMXgAOiM=/",
+    "technologyId": 3
+  },
+  {
+    "id": 233,
+    "name": "მასივების იტერაცია",
+    "theoryVideo": "https://www.youtube.com/watch?v=tTI-hENw8Yc",
+    "miroLink": "https://miro.com/app/board/uXjVMXgAOiM=/",
+    "technologyId": 3
+  },
+  {
+    "id": 234,
+    "name": "CD-Professional Summary: Role Relevancy",
+    "theoryVideo": "https://miro.com/app/board/uXjVNzGodKs=/",
+    "miroLink": "https://miro.com/app/board/uXjVNzGodKs=/",
+    "technologyId": 19
+  },
+  {
+    "id": 235,
+    "name": "Mastering Conversational Skills",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 236,
+    "name": "Resume Summary Analysis ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 237,
+    "name": "Speaking Activity: Career Choice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 238,
+    "name": "Vocabulary/Discussion",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 239,
+    "name": "Vocabulary/Discussion",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 240,
+    "name": "Mastering Conversation/Debates",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 241,
+    "name": "Power Words Revision",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 242,
+    "name": "Vocabulary/Speaking",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 243,
+    "name": "ჩარჩოები და მათი ქცევის წესები (Auto-Layout)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 244,
+    "name": "ამბის მოყოლა ედითინგის დროს",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 245,
+    "name": "თაიმლაინის და ლეიერების მენეჯმენტი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 246,
+    "name": "გრაფიკული დიზაინი სხვადასხვა მედიაში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 23
+  },
+  {
+    "id": 247,
+    "name": "Blender-ის ინტერფეისი და ნავიგაცია (ნაწილი 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 248,
+    "name": "ინტერიერის დიზაინის ისტორია",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 249,
+    "name": "შესავალი ალგორითმებში",
+    "theoryVideo": "https://www.youtube.com/watch?v=Jv4D2mm6lJw",
+    "miroLink": "https://miro.com/app/board/uXjVMVq8zPc=/",
+    "technologyId": 8
+  },
+  {
+    "id": 250,
+    "name": "პრობლემის ანალიზი",
+    "theoryVideo": "https://www.youtube.com/watch?v=g3XRoSdBVcQ",
+    "miroLink": "https://miro.com/app/board/uXjVMSZiUb8=/",
+    "technologyId": 8
+  },
+  {
+    "id": 251,
+    "name": "2-კვირიანი სასწავლო ვიზიტი ლონდონში - პრეზენტაცია",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 21
+  },
+  {
+    "id": 252,
+    "name": "ობიექტები",
+    "theoryVideo": "https://www.youtube.com/watch?v=4KZ7TibSrAk",
+    "miroLink": "https://miro.com/app/board/uXjVMRYDiUY=/",
+    "technologyId": 3
+  },
+  {
+    "id": 253,
+    "name": "ფუნქცია",
+    "theoryVideo": "https://www.youtube.com/watch?v=pof3MznOWWk",
+    "miroLink": "https://miro.com/app/board/uXjVMQILHMM=/",
+    "technologyId": 3
+  },
+  {
+    "id": 254,
+    "name": "Grammar Tenses Revision ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 255,
+    "name": "Reading and Speaking Practice ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 256,
+    "name": "Reading and Speaking Practice ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 257,
+    "name": "CD-Soft and Hard Skills",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 19
+  },
+  {
+    "id": 258,
+    "name": "Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 259,
+    "name": "UI კომპონენტები და მათი ანატომია",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 260,
+    "name": "რა არის და რა გამოყენება აქვთ პრიმიტიულ ობიექტებს",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 261,
+    "name": "შესავალი ძირითად ტრანსფორმაციებში და Graph ედიტორი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 262,
+    "name": "გრაფიკული დიზაინის პროცესი, ბრიფის გაგება და გააზრება",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 23
+  },
+  {
+    "id": 263,
+    "name": "რისგან შედგება ინტერიერის სივრცული დაგეგმარება",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 264,
+    "name": "ვიზუალური სტორითელინგი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 265,
+    "name": "სტაჟირების პროგრამის პრეზენტაცია",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 28
+  },
+  {
+    "id": 266,
+    "name": "UI კომპონენტები და მათი ანატომია (ნაწილი 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 267,
+    "name": "UI კომპონენტების ორგანიზება ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 268,
+    "name": "ტელეფონით გადაღებული ვიდეო-აუდიო მასალის ედითინგი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 269,
+    "name": "შესავალი ფერების კორექციაში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 270,
+    "name": "შესავალი ფოტოშოპში და მონიშვნის ხელსაწყოებში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 23
+  },
+  {
+    "id": 271,
+    "name": "ლეიერები და ფერების რედაქტირება",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 23
+  },
+  {
+    "id": 272,
+    "name": "Shape და Path ანიმაციები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 273,
+    "name": "შესავალი ძირითად ეფექტებში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 274,
+    "name": "Javascript-ში ჩაშენებული ობიექტები",
+    "theoryVideo": "https://www.youtube.com/watch?v=cYXj78x0pSg",
+    "miroLink": "https://miro.com/app/board/uXjVMPEWnSg=/",
+    "technologyId": 3
+  },
+  {
+    "id": 275,
+    "name": "Countable and Uncountable revision",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 276,
+    "name": "Cardinal and Ordinal Numbers",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 277,
+    "name": "Quiz-based card game",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 278,
+    "name": "Past Perfect Tenses",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 279,
+    "name": "Speaking activity: Rules for negotiation",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 280,
+    "name": "Reading and vocabulary practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 281,
+    "name": "შესავალი მოდელირბაში (ნაწილი 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 282,
+    "name": "შესავალი მოდელირბაში (ნაწილი 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 283,
+    "name": "დიზაინის ელემენტების გაგება (ხაზი, ფორმა, ფერი, ტექსტურა და ა.შ.)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 284,
+    "name": "DOM და Window API",
+    "theoryVideo": "https://www.youtube.com/watch?v=Zqb1245dclk",
+    "miroLink": "https://miro.com/app/board/uXjVMO-9EBE=/",
+    "technologyId": 3
+  },
+  {
+    "id": 285,
+    "name": "დიზაინის პრინციპების გამოყენება (ბალანსი, ჰარმონია, რიტმი და ა.შ.)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 286,
+    "name": "Writing Practice: Emails",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 287,
+    "name": "Grammar Revision",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 288,
+    "name": "CD-Experience and education ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 19
+  },
+  {
+    "id": 289,
+    "name": "Game: Number Categories ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 290,
+    "name": "Modals: should/shouldn’t ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 291,
+    "name": "Game: Impromptu speaking",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 292,
+    "name": "Planning ahead: Phrases to express probability ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 293,
+    "name": "Game: Mafia Night",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 294,
+    "name": "Passive Voice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 295,
+    "name": "Job Search: Reviewing Job Description",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 19
+  },
+  {
+    "id": 296,
+    "name": "Giving advice and expressing expectations",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 297,
+    "name": "Modal verbs: Should/Shouldn’t/Ought to/Ought not to",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 298,
+    "name": "Patterns",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVMM6qCEI=/",
+    "technologyId": 8
+  },
+  {
+    "id": 299,
+    "name": "ალგორითმებში ვარჯიში Part 1",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 8
+  },
+  {
+    "id": 300,
+    "name": "როგორ გავარჩიოთ კარგი და ცუდი UI დიზაინი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 301,
+    "name": "ტიპოგრაფიის გამოყენება UI დიზაინში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 302,
+    "name": "კვლევის ჩატარება, კონცეფცია, დიზაინ ელემენტების გამოყენება ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 23
+  },
+  {
+    "id": 303,
+    "name": "შესავალი ტიპოგრაფიაში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 23
+  },
+  {
+    "id": 304,
+    "name": "როგორ ვიყენებთ Blending Mode-ებს",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 29
+  },
+  {
+    "id": 305,
+    "name": "შესავალი ჩასწორებებში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 29
+  },
+  {
+    "id": 306,
+    "name": "შესავალი მოდელირებაში (ნაწილი 3)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 307,
+    "name": "შესავალი მოდელირებაში (ნაწილი 4)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 308,
+    "name": "სივრცია დაგეგმვის საფუძვლები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 309,
+    "name": "ავეჯის მოწყობა და მოძრაობის ნაკადი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 310,
+    "name": "კრეატიული კამერის კუთხეები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 311,
+    "name": "კრეატიული გადასვლები (Transitions)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 312,
+    "name": "შესავალი ტიპოგრაფიაში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 313,
+    "name": "ფერი და ფერების თეორია",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 314,
+    "name": "ალგორითმებში ვარჯიში Part 2",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 8
+  },
+  {
+    "id": 315,
+    "name": "Modal Verbs",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 316,
+    "name": "Speaking and Listening",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 317,
+    "name": "ალგორითმებში ვარჯიში Part 3",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 8
+  },
+  {
+    "id": 318,
+    "name": "2nd conditional",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 319,
+    "name": "3rd conditional",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 320,
+    "name": "Passive Voice (Part 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 321,
+    "name": "Business English Reading",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 322,
+    "name": "Grammar, Reading",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 323,
+    "name": "Speaking Activity",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 324,
+    "name": "Cover Letter Stucture",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 30
+  },
+  {
+    "id": 325,
+    "name": "რა არის ფერები და UI დიზაინში პრაქტიკული გამოყენება",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 326,
+    "name": "შესავალი პიქტოგრამებში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 327,
+    "name": "ფასიანი და უფასო რესურსი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 328,
+    "name": "შესავალი განათებაში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 329,
+    "name": "შესავალი მოდელირებაში (ნაწილი 5)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 330,
+    "name": "შესავალი ბლენდერის მოდიფიკაციებში (ნაწილი 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 331,
+    "name": "ერგონომიკა დიზაინში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 332,
+    "name": "ფერის ბორბალი და სქემები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 333,
+    "name": "რა არის ფილტრები და ეფექტები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 29
+  },
+  {
+    "id": 334,
+    "name": "შესავალი Remove & Brush ხელსაწყოებში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 29
+  },
+  {
+    "id": 335,
+    "name": "შესავალი ფერების თეორიაში, გრიდ სისტემები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 23
+  },
+  {
+    "id": 336,
+    "name": "⁠⁠შესავალი ბრენდის იდენტობის დიზაინში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 23
+  },
+  {
+    "id": 337,
+    "name": "კოლაბორაცია Adobe illustrator-თან",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 338,
+    "name": "კომპლექსური shape ანიმაციები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 339,
+    "name": "ალგორითმებში ვარჯიში Part 4",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 8
+  },
+  {
+    "id": 340,
+    "name": "ალგორითმებში ვარჯიში Part 5",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 8
+  },
+  {
+    "id": 341,
+    "name": "ალგორითმებში ვარჯიში Part 6",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 8
+  },
+  {
+    "id": 342,
+    "name": "ვიდეო/აუდიო Asset-ების გამოყენება",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 343,
+    "name": "როგორ დავგეგმოთ ვიდეო გადაღება",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 344,
+    "name": "გრიდები და მათი პრაქტიკული გამოყენება",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 345,
+    "name": "სწორი სტრუქტურის და განლაგების შექმნა",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 346,
+    "name": "შესავალი ბლენდერის მოდიფიკაციებში (ნაწილი 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 347,
+    "name": "შესავალი ბლენდერის მოდიფიკაციებში (ნაწილი 3)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 348,
+    "name": "ფერის ფსიქოლოგიური ეფექტი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 349,
+    "name": "ფერი შიდა სივრცეებში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 350,
+    "name": "Masking & Parenting",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 351,
+    "name": "პრაქტიკა Null ობიქტზე და დეტალური ფარენთინგი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 352,
+    "name": "⁠რა არის გრაფიკული დიზაინის როლი ბრენდინგში?",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 23
+  },
+  {
+    "id": 353,
+    "name": "შესავალი პროდუქტის შეფუთვის დიზაინში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 23
+  },
+  {
+    "id": 354,
+    "name": "ფუნჯები და პატერნები Photoshop-ში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 29
+  },
+  {
+    "id": 355,
+    "name": "ტექსტები Photoshop-ში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 29
+  },
+  {
+    "id": 356,
+    "name": "Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 357,
+    "name": "Article writing: Past simple and past continuous practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 358,
+    "name": "Mixed Conditionals",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 359,
+    "name": "Writing Exercise ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 360,
+    "name": "Speaking and listening:  Record an Interview",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 361,
+    "name": "Presentation: Finding a solution to the problem",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 362,
+    "name": "Cover Letter Analysis ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 30
+  },
+  {
+    "id": 363,
+    "name": "Vocabulary Activity",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 364,
+    "name": "Business English: writing, listening and vocabulary ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 365,
+    "name": "Present Tenses Revision",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 366,
+    "name": "5 Types of Questions",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 367,
+    "name": "Story Analysis",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 368,
+    "name": "Past Perfect",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 369,
+    "name": "Creating LinkedIn Profile",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 31
+  },
+  {
+    "id": 370,
+    "name": "მოდული",
+    "theoryVideo": "https://www.youtube.com/watch?v=cgtKOJ5P4jc",
+    "miroLink": "https://miro.com/app/board/uXjVMNqT7Nk=/",
+    "technologyId": 3
+  },
+  {
+    "id": 371,
+    "name": "NPM",
+    "theoryVideo": "https://www.youtube.com/watch?v=cZJYAUEK3Ro",
+    "miroLink": "https://miro.com/app/board/uXjVMNWhBE4=/",
+    "technologyId": 20
+  },
+  {
+    "id": 372,
+    "name": "შესავალი ინტერაქციებში და პროტოტიპებაში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 373,
+    "name": "შესავალი კომპონენტებში და ვარიანტებში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 374,
+    "name": "პრაქტიკული ვიდეოს ბრეინშტორმინგ შეხვედრა",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 375,
+    "name": "პრაქტიკული გადაღების პირველი დღე",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 376,
+    "name": "ტექსტუალური პოსტერის დიზაინის შექმნა",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 29
+  },
+  {
+    "id": 377,
+    "name": "ბანერის დიზაინი ფოტოშოპში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 29
+  },
+  {
+    "id": 378,
+    "name": "კომპლექსური ძერწვის ხელსაწყოები და ტექნიკები (ნაწილი 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 379,
+    "name": "კომპლექსური ძერწვის ხელსაწყოები და ტექნიკები (ნაწილი 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 380,
+    "name": "შეჯამება",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 381,
+    "name": "გაცნობა გავრცელებულ მასალებში (იატაკი, კედლები, ქსოვილები და ა.შ.)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 382,
+    "name": "კინეტიკური ტიპოგრაფია",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 383,
+    "name": "Essential Graphics და Presets",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 385,
+    "name": "Quiz 4",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 386,
+    "name": "Quiz 4",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 387,
+    "name": "Quiz 4",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 388,
+    "name": "Javascript-ის სხვადასხვა კუთხე კუნჭულები",
+    "theoryVideo": "https://www.youtube.com/watch?v=OjiUC6RTDa0",
+    "miroLink": "https://miro.com/app/board/uXjVMIhxlmI=/",
+    "technologyId": 3
+  },
+  {
+    "id": 389,
+    "name": "Javascript-ის კუთხე-კუნჭულები Part 2",
+    "theoryVideo": "https://www.youtube.com/watch?v=GwAVB9kN0MA",
+    "miroLink": "https://miro.com/app/board/uXjVMIhxlmI=/",
+    "technologyId": 3
+  },
+  {
+    "id": 390,
+    "name": "ცვლადები და კომპლექსური კომპონენტები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 391,
+    "name": "ლოგიკური ინტერაქციების შექმნა",
+    "theoryVideo": "1",
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 392,
+    "name": "კომპლექსური ძერწვის ხელსაწყოები და ტექნიკები (ნაწილი 3)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 393,
+    "name": "კომპლექსური ძერწვის ხელსაწყოები და ტექნიკები (ნაწილი 4)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 394,
+    "name": "გაცნობა გავრცელებულ მასალებში (იატაკი,კედლები,ქსოვილები და ა.შ.)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 395,
+    "name": "მდგრადობაი ნტერიერის დიზაინში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 396,
+    "name": "Essential Graphics და Presets",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 397,
+    "name": "შესავალი Expression-ებში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 398,
+    "name": "ბანერის დიზაინი ფოტოშოპში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 29
+  },
+  {
+    "id": 399,
+    "name": "კომპლექსური პოსტერის დიზაინი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 29
+  },
+  {
+    "id": 400,
+    "name": "Future Tenses Revision ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 401,
+    "name": "Present Perfect Revision",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 402,
+    "name": "Presentations: finding a solution to the problem",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 403,
+    "name": "Future Perfect and Future Perfect Continuous Revision",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 404,
+    "name": "Reported Speech Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 405,
+    "name": "Creative Story Crafting from Covers and Words",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 406,
+    "name": "Past Perfect continuous ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 407,
+    "name": "LinkedIn Optimization",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 31
+  },
+  {
+    "id": 408,
+    "name": "შესავალი Typescript-ში",
+    "theoryVideo": "https://www.youtube.com/watch?v=Rzk9-SWcb8g",
+    "miroLink": "https://miro.com/app/board/uXjVMHB6xHA=/",
+    "technologyId": 3
+  },
+  {
+    "id": 409,
+    "name": "OOP - Object Oriented Programming",
+    "theoryVideo": "https://www.youtube.com/watch?v=fn3SEBNhpDo",
+    "miroLink": "https://miro.com/app/board/uXjVM1LA_mM=/",
+    "technologyId": 3
+  },
+  {
+    "id": 410,
+    "name": "Countable/Uncountable; Plural/Singular; Articles. ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 411,
+    "name": "Activity: Describe Pictures",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 412,
+    "name": "Prepositions and Articles Revision",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 413,
+    "name": "Hobby Discussion",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 414,
+    "name": "Expressing Ideas",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 415,
+    "name": "Discussion",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 416,
+    "name": "How to use Linkedin",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 31
+  },
+  {
+    "id": 417,
+    "name": "Conditionals (Part 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 418,
+    "name": "Conditionals (Part 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 419,
+    "name": "ციფრული მარკეტინგის საფუძვლები \\\"შესავალი\\\"",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVKRhXCpc=/?share_link_id=31860699487888888",
+    "technologyId": 32
+  },
+  {
+    "id": 420,
+    "name": " ციფრული მარკეტინგის საფუძვლები \\\"Web insights და E-commerce\\\"",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVKRhXCpk=/?share_link_id=124250071721",
+    "technologyId": 32
+  },
+  {
+    "id": 421,
+    "name": "არქიკადის აზომვითი ნახაზები (ნაწილი 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 422,
+    "name": "არქიკადის აზომვითი ნახაზები (ნაწილი 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 423,
+    "name": "კომპლექსური ძერწვის ხელსაწყოები და ტექნიკები (ნაწილი 5)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 424,
+    "name": "კომპლექსური ძერწვის ხელსაწყოები და ტექნიკები (ნაწილი 6)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 425,
+    "name": " ⁠შესავალი Expression-ებში (ნაწილი 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 426,
+    "name": "მეტი ფუნქცია Null ობიექტზე",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 427,
+    "name": "რესპონსიური დიზაინი და მისი გაიდლაინები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 428,
+    "name": "გეშტალტის პრინციპები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 429,
+    "name": "შესავალი Davinci Resolve-ში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 430,
+    "name": "ექსპერიმენტალური პოსტერის დიზაინი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 29
+  },
+  {
+    "id": 431,
+    "name": "პროდუქტის შექფუთვის დიზაინი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 29
+  },
+  {
+    "id": 432,
+    "name": "Some/Any/No/Every",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 433,
+    "name": "Passive Voice ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 434,
+    "name": "Literal and Figurative Speech ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 435,
+    "name": "Mixed Conditionals",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 436,
+    "name": "LinkedIn: Case Study Examples",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 31
+  },
+  {
+    "id": 437,
+    "name": "დროის მანიპულაცია",
+    "theoryVideo": "https://www.youtube.com/watch?v=zGl9ZGv8mgQ",
+    "miroLink": "https://miro.com/app/board/uXjVM4KSZog=/",
+    "technologyId": 3
+  },
+  {
+    "id": 438,
+    "name": "CSS Box მოდელი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 5
+  },
+  {
+    "id": 439,
+    "name": "ციფრული მარკეტინგის საფუძვლები - როგორ მუშაობს საძიებო სისტემები",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVKRhXCqo=/?share_link_id=520311574505",
+    "technologyId": 32
+  },
+  {
+    "id": 440,
+    "name": "ციფრული მარკეტინგის საფუძვლები - Google Business Profile",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVKRhXC1I=/?share_link_id=968632349336",
+    "technologyId": 32
+  },
+  {
+    "id": 442,
+    "name": "10 გამოყენებადობის ევრისტიკა",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 443,
+    "name": "ინტერიერის 3D ვიზუალიზაცია (ნაწილი 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 444,
+    "name": "შესავალი UV Mapping-ში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 445,
+    "name": "კომპლექსური ფოტომანიპულაცია",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 29
+  },
+  {
+    "id": 446,
+    "name": "შესავალი ვიდეო ეფექტებში (ნაწილი 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 448,
+    "name": "CSS Background",
+    "theoryVideo": "https://www.youtube.com/watch?v=j4T71YCNncE",
+    "miroLink": "https://miro.com/app/board/uXjVPpZfJM8=/",
+    "technologyId": 5
+  },
+  {
+    "id": 453,
+    "name": "ციფრული მარკეტინგის საფუძვლები - ტერმინოლოგია და სტატისტიკა",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVKJItdDc=/?share_link_id=130978583883",
+    "technologyId": 32
+  },
+  {
+    "id": 454,
+    "name": "ციფრული მარკეტინგის საფუძვლები - სოციალური მედია პლატფორმები (SMM)",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVKRg23tw=/?share_link_id=976787330152",
+    "technologyId": 32
+  },
+  {
+    "id": 455,
+    "name": "Speaking: Food and drinks ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 456,
+    "name": "Speaking: Dreams ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 457,
+    "name": "Phrasal Verbs",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 458,
+    "name": "Frontend-ის და Backend-ის მასტერკლასი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 1
+  },
+  {
+    "id": 459,
+    "name": "შესავალი UX დიზაინში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 460,
+    "name": "მატერიალები და შეიდინგი",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 461,
+    "name": "ინტერიერის 3D ვიზუალიზაცია (ნაწილი 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 462,
+    "name": "შესავალი ვიდეო ეფექტებში (ნაწილი 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 463,
+    "name": "შესავალი პროფესიონალურ რეთაჩში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 29
+  },
+  {
+    "id": 464,
+    "name": "HTTP პროტოკოლი",
+    "theoryVideo": "https://www.youtube.com/watch?v=yUJCqyI9SRo",
+    "miroLink": "https://miro.com/app/board/uXjVM5yHCI4=/",
+    "technologyId": 1
+  },
+  {
+    "id": 466,
+    "name": "შესავალი ვიდეო ეფექტებში (ნაწილი 3)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": null
+  },
+  {
+    "id": 467,
+    "name": "ვიდეო ეფექტების შეჯამება/მომზადება Plug-in-ებისთვის",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": null
+  },
+  {
+    "id": 468,
+    "name": "შესავალი ვიდეო ეფექტებში (ნაწილი 3)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": null
+  },
+  {
+    "id": 469,
+    "name": "შესავალი ვიდეო ეფექტებში (ნაწილი 3)",
+    "theoryVideo": "1",
+    "miroLink": "1",
+    "technologyId": null
+  },
+  {
+    "id": 470,
+    "name": "შესავალი ვიდეო ეფექტებში (ნაწილი 3)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 471,
+    "name": "ვიდეო ეფექტების შეჯამება/მომზადება Plug-in-ებისთვის",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 472,
+    "name": "ინტერიერის 3D ვიზუალიზაცია (ნაწილი 3)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 473,
+    "name": "ინტერიერის 3D ვიზუალიზაცია (ნაწილი 4)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 474,
+    "name": "მატერიალები და შეიდინგი (Substance Painter 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 475,
+    "name": "მატერიალები და შეიდინგი (Substance Painter 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 476,
+    "name": " რა არის UX კვლევა და როგორ ვატარებთ ინტერვიუებს",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 477,
+    "name": "გადაღება (დღე 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 27
+  },
+  {
+    "id": 478,
+    "name": "შესავალი ილუსტრატორში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 33
+  },
+  {
+    "id": 479,
+    "name": "ლოგო დიზაინის ტექნიკები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 33
+  },
+  {
+    "id": 480,
+    "name": "Speaking: Things in common",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 481,
+    "name": "Speaking: Favorite Movies/TV Shows",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 482,
+    "name": "Passive Voice (part 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 483,
+    "name": "Activity: Creating a story",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 484,
+    "name": "Phrasal Verbs (part 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 485,
+    "name": "Activity: Creating a story",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 486,
+    "name": "Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 487,
+    "name": "LinkedIn Profile Manual",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 31
+  },
+  {
+    "id": 488,
+    "name": "შესავალი React-სა და Next-ში",
+    "theoryVideo": "https://www.youtube.com/watch?v=g-jq0H2aP0I",
+    "miroLink": "https://miro.com/app/board/uXjVMGtN0rA=/",
+    "technologyId": 34
+  },
+  {
+    "id": 489,
+    "name": "შესავალი Backend-სა და NestJS-ში",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVKJPIq5E=/",
+    "technologyId": 35
+  },
+  {
+    "id": 490,
+    "name": "ციფრული მარკეტინგის საფუძვლები - E-mail Marketing (შესავალი)",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVKRg6VlY=/?share_link_id=783135837295",
+    "technologyId": 32
+  },
+  {
+    "id": 491,
+    "name": "ციფრული მარკეტინგის საფუძვლები - Web Analytics (შესავალი)",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVKRmcOyU=/?share_link_id=432269113822",
+    "technologyId": 32
+  },
+  {
+    "id": 492,
+    "name": "ციფრული მარკეტინგის საფუძვლები - Content Marketing & Media Buying (შესავალი)",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVKD3jR0E=/?share_link_id=604004933614",
+    "technologyId": 32
+  },
+  {
+    "id": 493,
+    "name": "ციფრული მარკეტინგის საფუძვლები - Affiliate & Influencer Marketing (შესავალი)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 32
+  },
+  {
+    "id": 494,
+    "name": "5 types of Questions",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 495,
+    "name": "Speaking Practice: Speaking with an Alien",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 496,
+    "name": "Phrasal Verbs Introduction",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 497,
+    "name": "Phrasal Verbs Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 498,
+    "name": "Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 499,
+    "name": "Debates",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 500,
+    "name": "LinkedIn Profile Manual 2",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 31
+  },
+  {
+    "id": 501,
+    "name": "როგორ ვატარებთ მეორად კვლევას და კონკურენტების ანალიზს",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 502,
+    "name": "როგორ შევქმნათ კითხვარები და ვაწარმოოთ გამოკითხვები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 503,
+    "name": "შესავალი განათების კომპოზიციაში (ნაწილი 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 504,
+    "name": "შესავალი განათების კომპოზიციაში (ნაწილი 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 505,
+    "name": "3D Layers & Camera (ნაწილი 1)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 506,
+    "name": "3D Layers & Camera (ნაწილი 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 507,
+    "name": "ინტერიერის 3D ვიზუალიზაცია (ნაწილი 5)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 508,
+    "name": "ინტერიერის 3D ვიზუალიზაცია (ნაწილი 6)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 509,
+    "name": "შესავალი ეფექტებში და პარამეტრებში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 33
+  },
+  {
+    "id": 510,
+    "name": "როგორ ვაორგანიზებთ ბრენდის იდენტობას",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 33
+  },
+  {
+    "id": 511,
+    "name": "JSX და Prop",
+    "theoryVideo": "https://www.youtube.com/watch?v=Cl6GqnC_A3s",
+    "miroLink": "https://miro.com/app/board/uXjVMGdRGsM=",
+    "technologyId": 34
+  },
+  {
+    "id": 512,
+    "name": "Next.js-ის სტრუქტურა Part 1",
+    "theoryVideo": "https://www.youtube.com/watch?v=8Vwk3KTxLcc",
+    "miroLink": null,
+    "technologyId": 34
+  },
+  {
+    "id": 513,
+    "name": "Rest-ის საფუძვლები",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVKG8ikXM=/",
+    "technologyId": 35
+  },
+  {
+    "id": 514,
+    "name": "DTO და ვალიდაცია",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVKESKd-U=/",
+    "technologyId": 35
+  },
+  {
+    "id": 515,
+    "name": "Designers Kickoff meeting",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 28
+  },
+  {
+    "id": 518,
+    "name": "Getting to know each other",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 36
+  },
+  {
+    "id": 519,
+    "name": "Getting to know each other",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 37
+  },
+  {
+    "id": 520,
+    "name": "Getting to know each other",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 38
+  },
+  {
+    "id": 521,
+    "name": "Phrasal Verbs",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 522,
+    "name": "Phrasal Verbs in use",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 12
+  },
+  {
+    "id": 523,
+    "name": "Discussion: Using phrasal verbs ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 524,
+    "name": " IELTS criteria speaking ",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 13
+  },
+  {
+    "id": 525,
+    "name": "IELTS criteria speaking",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 526,
+    "name": "Reading: Articles",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 14
+  },
+  {
+    "id": 527,
+    "name": "Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 36
+  },
+  {
+    "id": 528,
+    "name": "Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 37
+  },
+  {
+    "id": 529,
+    "name": "Speaking Practice",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 38
+  },
+  {
+    "id": 530,
+    "name": "Mixed Conditional (Part 2)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 531,
+    "name": "Phrasal Verbs in use",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 18
+  },
+  {
+    "id": 532,
+    "name": "LinkedIn Profile Manual 3",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 31
+  },
+  {
+    "id": 533,
+    "name": "კომპონენტის render pattern-ები",
+    "theoryVideo": "https://www.youtube.com/watch?v=xLVu9PJB82g",
+    "miroLink": "https://miro.com/app/board/uXjVMDv-aZE=/",
+    "technologyId": 34
+  },
+  {
+    "id": 534,
+    "name": "State და User Input",
+    "theoryVideo": "https://www.youtube.com/watch?v=-Yx3R8k0xXs",
+    "miroLink": "https://miro.com/app/board/uXjVMCpHTqo=/",
+    "technologyId": 34
+  },
+  {
+    "id": 535,
+    "name": "სერვისი და რეპოზიტორია",
+    "theoryVideo": null,
+    "miroLink": "https://miro.com/app/board/uXjVKCrtLaY=/?share_link_id=399652043419",
+    "technologyId": 35
+  },
+  {
+    "id": 536,
+    "name": "აფინიტი დიაგრამა და მოკვლეული ინფორმაციის ორგანიზება",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 537,
+    "name": "ემპათიის რუკა და პერსონები",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 22
+  },
+  {
+    "id": 538,
+    "name": "შესავალი განათების კომპოზიციაში (ნაწილი 3)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 539,
+    "name": "შესავალი განათების კომპოზიციაში (ნაწილი 4)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 25
+  },
+  {
+    "id": 540,
+    "name": "პერსონაჟის მომზადება ანიმაციისთვის ნაწილი 1",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 541,
+    "name": "პერსონაჟის მომზადება ანიმაციისთვის ნაწილი 2",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 24
+  },
+  {
+    "id": 542,
+    "name": "ინტერიერის 3D ვიზუალიზაცია (ნაწილი 7)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 543,
+    "name": "ინტერიერის 3D ვიზუალიზაცია (ნაწილი 8)",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 26
+  },
+  {
+    "id": 544,
+    "name": "შესავალი ილუსტრირებაში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 33
+  },
+  {
+    "id": 545,
+    "name": "პოსტერის დიზაინი ილუსტრატორში",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 33
+  },
+  {
+    "id": 546,
+    "name": "სერვისი და რეპოზიტორია Part 2",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 35
+  },
+  {
+    "id": 549,
+    "name": "test",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 35
+  },
+  {
+    "id": 550,
+    "name": "topiki topiki",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 2
+  },
+  {
+    "id": 551,
+    "name": "dasa",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 1
+  },
+  {
+    "id": 552,
+    "name": "dasa",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 1
+  },
+  {
+    "id": 553,
+    "name": "baduri",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 5
+  },
+  {
+    "id": 554,
+    "name": "java java javacaa",
+    "theoryVideo": null,
+    "miroLink": null,
+    "technologyId": 3
+  }
+]

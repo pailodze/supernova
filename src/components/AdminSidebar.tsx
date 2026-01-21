@@ -21,6 +21,7 @@ const menuCategories = [
   {
     title: 'სწავლა',
     items: [
+      { href: '/admin/learning', label: 'მასალები', icon: '📚' },
       { href: '/admin/skills', label: 'უნარები', icon: '🎯' },
       { href: '/admin/certificates', label: 'სერტიფიკატები', icon: '📜' },
     ],
