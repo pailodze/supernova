@@ -180,12 +180,61 @@ export default function AdminCertificatesPage() {
     delivered: requests.filter(r => r.status === 'delivered').length,
   }
 
+  const exportToCsv = () => {
+    const statusLabels: Record<string, string> = {
+      pending: 'მოლოდინში',
+      rejected: 'უარყოფილი',
+      sent: 'გაგზავნილი',
+      delivered: 'მიწოდებული',
+    }
+
+    const headers = ['სახელი', 'ტელეფონი', 'ჯგუფი', 'მისამართი', 'დამატებითი ინფო', 'სტატუსი', 'უარყოფის მიზეზი', 'სავარაუდო მიწოდება', 'შექმნის თარიღი', 'რუკის ბმული']
+
+    const rows = filteredRequests.map(req => [
+      req.student?.name || '',
+      req.student?.phone || '',
+      req.student?.group_name || '',
+      req.address,
+      req.additional_info || '',
+      statusLabels[req.status] || req.status,
+      req.rejection_reason || '',
+      req.estimated_arrival ? formatDate(req.estimated_arrival) : '',
+      formatDateTime(req.created_at),
+      `https://www.google.com/maps?q=${req.latitude},${req.longitude}`,
+    ])
+
+    const csvContent = [
+      headers.join(','),
+      ...rows.map(row => row.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(','))
+    ].join('\n')
+
+    const blob = new Blob(['\ufeff' + csvContent], { type: 'text/csv;charset=utf-8;' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = `certificate-requests-${new Date().toISOString().split('T')[0]}.csv`
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+    URL.revokeObjectURL(url)
+  }
+
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-lg font-semibold text-zinc-900 dark:text-white">
           სერტიფიკატების მოთხოვნები
         </h2>
+        <button
+          onClick={exportToCsv}
+          disabled={filteredRequests.length === 0}
+          className="px-4 py-2 bg-green-600 hover:bg-green-700 disabled:bg-green-400 text-white text-sm font-medium rounded-lg transition flex items-center gap-2"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          CSV ექსპორტი
+        </button>
       </div>
 
       {/* Status Filter Tabs */}
