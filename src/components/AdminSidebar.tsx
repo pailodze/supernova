@@ -14,6 +14,7 @@ const menuCategories = [
     title: 'კარიერა',
     items: [
       { href: '/admin/jobs', label: 'ვაკანსიები', icon: '💼' },
+      { href: '/admin/job-applications', label: 'განაცხადები', icon: '📨' },
       { href: '/admin/tasks', label: 'დავალებები', icon: '📋' },
       { href: '/admin/submissions', label: 'შესრულებული', icon: '✅' },
     ],

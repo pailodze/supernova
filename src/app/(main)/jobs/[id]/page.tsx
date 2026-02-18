@@ -11,10 +11,21 @@ const JOB_TYPES: Record<string, string> = {
   freelance: 'ფრილანსი',
 }
 
-function cleanHtml(html: string): string {
-  return html
-    .replace(/&nbsp;/g, ' ')
-    .replace(/\u00A0/g, ' ')
+function formatDescription(text: string): string {
+  // If content is already HTML (from Quill editor)
+  if (/<[a-z][\s\S]*>/i.test(text)) {
+    return text
+      .replace(/<(p|h[1-6])><\/\1>/g, '<p><br></p>')
+      .replace(/&nbsp;/g, ' ')
+      .replace(/\u00A0/g, ' ')
+  }
+  // Plain text: convert newlines to <br> and tabs to spaces
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/\t/g, '&emsp;')
+    .replace(/\n/g, '<br>')
 }
 
 type JobWithRelations = Job & {
@@ -141,7 +152,7 @@ export default async function JobDetailPage({
               </h2>
               <div
                 className="text-zinc-600 dark:text-zinc-400 prose prose-zinc dark:prose-invert max-w-none [&_img]:max-w-full [&_pre]:overflow-x-auto [&_table]:overflow-x-auto"
-                dangerouslySetInnerHTML={{ __html: cleanHtml(job.description) }}
+                dangerouslySetInnerHTML={{ __html: formatDescription(job.description) }}
               />
             </div>
           )}
