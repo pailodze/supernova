@@ -214,10 +214,7 @@ export default function CertificateRequestCard({ studentId }: Props) {
                 onClick={() => setShowModal(true)}
                 className="px-4 py-2 bg-white text-indigo-600 font-medium rounded-lg hover:bg-indigo-50 transition whitespace-nowrap"
               >
-                {request?.status === 'rejected' || request?.status === 'sent' || request?.status === 'delivered'
-                  ? 'თავიდან მოთხოვნა'
-                  : 'მოთხოვნა'
-                }
+                {request ? 'თავიდან მოთხოვნა' : 'მოთხოვნა'}
               </button>
             )}
           </div>
