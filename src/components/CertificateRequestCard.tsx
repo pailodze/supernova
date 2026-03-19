@@ -131,7 +131,7 @@ export default function CertificateRequestCard({ studentId }: Props) {
   }
 
   // Only allow new requests when: no request exists OR previous request was rejected
-  const canRequest = !request || request.status === 'rejected'
+  const canRequest = !request || request.status === 'rejected' || request.status === 'sent'
 
   const getStatusBadge = () => {
     if (!request) return null
@@ -214,8 +214,8 @@ export default function CertificateRequestCard({ studentId }: Props) {
                 onClick={() => setShowModal(true)}
                 className="px-4 py-2 bg-white text-indigo-600 font-medium rounded-lg hover:bg-indigo-50 transition whitespace-nowrap"
               >
-                {request?.status === 'rejected' || request?.status === 'delivered'
-                  ? 'ახალი მოთხოვნა'
+                {request?.status === 'rejected' || request?.status === 'sent' || request?.status === 'delivered'
+                  ? 'თავიდან მოთხოვნა'
                   : 'მოთხოვნა'
                 }
               </button>

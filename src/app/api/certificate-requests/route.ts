@@ -98,7 +98,7 @@ async function createRequestHandler(request: NextRequest) {
       .from('certificate_requests')
       .select('id, status')
       .eq('student_id', session.studentId)
-      .in('status', ['pending', 'sent'])
+      .in('status', ['pending'])
       .maybeSingle()
 
     if (existingRequest) {
