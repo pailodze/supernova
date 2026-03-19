@@ -130,8 +130,6 @@ export default function CertificateRequestCard({ studentId }: Props) {
     }
   }
 
-  // Only allow new requests when: no request exists OR previous request was rejected
-  const canRequest = true
 
   const getStatusBadge = () => {
     if (!request) return null
@@ -199,40 +197,33 @@ export default function CertificateRequestCard({ studentId }: Props) {
             <div>
               <h3 className="text-lg font-semibold mb-1">სერტიფიკატის მიწოდება</h3>
               <p className="text-indigo-100 text-sm">
-                {canRequest
-                  ? 'მოითხოვე შენი სერტიფიკატის მიწოდება სახლში'
-                  : 'თქვენი მოთხოვნა დამუშავების პროცესშია'
+                {request
+                  ? 'თქვენი მოთხოვნა დამუშავების პროცესშია'
+                  : 'მოითხოვე შენი სერტიფიკატის მიწოდება სახლში'
                 }
               </p>
             </div>
           </div>
           {/* Desktop: show button/status inline */}
           <div className="hidden sm:flex items-center gap-3">
-            {request && !canRequest && getStatusBadge()}
-            {canRequest && (
-              <button
-                onClick={() => setShowModal(true)}
-                className="px-4 py-2 bg-white text-indigo-600 font-medium rounded-lg hover:bg-indigo-50 transition whitespace-nowrap"
-              >
-                {request ? 'თავიდან მოთხოვნა' : 'მოთხოვნა'}
-              </button>
-            )}
-          </div>
-        </div>
-        {/* Mobile: show status and button below separator */}
-        <div className="sm:hidden mt-3 pt-3 border-t border-white/20 flex items-center justify-between">
-          <div>{request && !canRequest && getStatusBadge()}</div>
-          {canRequest && (
+            {request && getStatusBadge()}
             <button
               onClick={() => setShowModal(true)}
               className="px-4 py-2 bg-white text-indigo-600 font-medium rounded-lg hover:bg-indigo-50 transition whitespace-nowrap"
             >
-              {request?.status === 'rejected' || request?.status === 'delivered'
-                ? 'ახალი მოთხოვნა'
-                : 'მოთხოვნა'
-              }
+              {request ? 'თავიდან მოთხოვნა' : 'მოთხოვნა'}
             </button>
-          )}
+          </div>
+        </div>
+        {/* Mobile: show status and button below separator */}
+        <div className="sm:hidden mt-3 pt-3 border-t border-white/20 flex items-center justify-between">
+          <div>{request && getStatusBadge()}</div>
+          <button
+            onClick={() => setShowModal(true)}
+            className="px-4 py-2 bg-white text-indigo-600 font-medium rounded-lg hover:bg-indigo-50 transition whitespace-nowrap"
+          >
+            {request ? 'თავიდან მოთხოვნა' : 'მოთხოვნა'}
+          </button>
         </div>
         {/* Desktop: show extra info below for sent/rejected statuses */}
         {request && request.status === 'sent' && request.estimated_arrival && (
