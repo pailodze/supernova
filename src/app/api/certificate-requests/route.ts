@@ -93,21 +93,6 @@ async function createRequestHandler(request: NextRequest) {
 
     const supabase = createServerSupabaseClient()
 
-    // Check if user already has a pending or sent request
-    const { data: existingRequest } = await supabase
-      .from('certificate_requests')
-      .select('id, status')
-      .eq('student_id', session.studentId)
-      .in('status', ['pending'])
-      .maybeSingle()
-
-    if (existingRequest) {
-      return NextResponse.json(
-        { error: 'You already have an active certificate request' },
-        { status: 400 }
-      )
-    }
-
     // Create new request
     const { data: newRequest, error } = await supabase
       .from('certificate_requests')
