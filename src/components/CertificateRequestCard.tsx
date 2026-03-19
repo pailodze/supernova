@@ -31,6 +31,7 @@ function formatDate(dateStr: string) {
 
 export default function CertificateRequestCard({ studentId }: Props) {
   const [request, setRequest] = useState<CertificateRequest | null>(null)
+  const [totalRequests, setTotalRequests] = useState(0)
   const [loading, setLoading] = useState(true)
   const [showModal, setShowModal] = useState(false)
   const [submitting, setSubmitting] = useState(false)
@@ -53,6 +54,7 @@ export default function CertificateRequestCard({ studentId }: Props) {
       if (response.ok) {
         const data = await response.json()
         setRequest(data.request || null)
+        setTotalRequests(data.totalRequests || 0)
       }
     } catch {
       console.error('Failed to fetch certificate request')
@@ -116,6 +118,7 @@ export default function CertificateRequestCard({ studentId }: Props) {
 
       const data = await response.json()
       setRequest(data.request)
+      setTotalRequests(prev => prev + 1)
       setShowModal(false)
       setFormData({
         address: '',
@@ -197,9 +200,11 @@ export default function CertificateRequestCard({ studentId }: Props) {
             <div>
               <h3 className="text-lg font-semibold mb-1">სერტიფიკატის მიწოდება</h3>
               <p className="text-indigo-100 text-sm">
-                {request
-                  ? 'თქვენი მოთხოვნა დამუშავების პროცესშია'
-                  : 'მოითხოვე შენი სერტიფიკატის მიწოდება სახლში'
+                {!request
+                  ? 'მოითხოვე შენი სერტიფიკატის მიწოდება სახლში'
+                  : totalRequests > 1
+                  ? 'თქვენი მოთხოვნა, თავიდან მიწოდებასთან დაკავშირებით, დამუშავების პროცესშია'
+                  : 'თქვენი მოთხოვნა დამუშავების პროცესშია'
                 }
               </p>
             </div>
@@ -207,23 +212,27 @@ export default function CertificateRequestCard({ studentId }: Props) {
           {/* Desktop: show button/status inline */}
           <div className="hidden sm:flex items-center gap-3">
             {request && getStatusBadge()}
+            {totalRequests < 2 && (
+              <button
+                onClick={() => setShowModal(true)}
+                className="px-4 py-2 bg-white text-indigo-600 font-medium rounded-lg hover:bg-indigo-50 transition whitespace-nowrap"
+              >
+                {request ? 'თავიდან მოთხოვნა' : 'მოთხოვნა'}
+              </button>
+            )}
+          </div>
+        </div>
+        {/* Mobile: show status and button below separator */}
+        <div className="sm:hidden mt-3 pt-3 border-t border-white/20 flex items-center justify-between">
+          <div>{request && getStatusBadge()}</div>
+          {totalRequests < 2 && (
             <button
               onClick={() => setShowModal(true)}
               className="px-4 py-2 bg-white text-indigo-600 font-medium rounded-lg hover:bg-indigo-50 transition whitespace-nowrap"
             >
               {request ? 'თავიდან მოთხოვნა' : 'მოთხოვნა'}
             </button>
-          </div>
-        </div>
-        {/* Mobile: show status and button below separator */}
-        <div className="sm:hidden mt-3 pt-3 border-t border-white/20 flex items-center justify-between">
-          <div>{request && getStatusBadge()}</div>
-          <button
-            onClick={() => setShowModal(true)}
-            className="px-4 py-2 bg-white text-indigo-600 font-medium rounded-lg hover:bg-indigo-50 transition whitespace-nowrap"
-          >
-            {request ? 'თავიდან მოთხოვნა' : 'მოთხოვნა'}
-          </button>
+          )}
         </div>
         {/* Desktop: show extra info below for sent/rejected statuses */}
         {request && request.status === 'sent' && request.estimated_arrival && (

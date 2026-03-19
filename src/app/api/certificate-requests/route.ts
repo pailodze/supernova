@@ -51,21 +51,27 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ requests: transformedRequests })
     }
 
-    // Regular user gets their own request
-    const { data: certRequest, error } = await supabase
-      .from('certificate_requests')
-      .select('*')
-      .eq('student_id', session.studentId)
-      .order('created_at', { ascending: false })
-      .limit(1)
-      .maybeSingle()
+    // Regular user gets their own request + total count
+    const [{ data: certRequest, error }, { count }] = await Promise.all([
+      supabase
+        .from('certificate_requests')
+        .select('*')
+        .eq('student_id', session.studentId)
+        .order('created_at', { ascending: false })
+        .limit(1)
+        .maybeSingle(),
+      supabase
+        .from('certificate_requests')
+        .select('*', { count: 'exact', head: true })
+        .eq('student_id', session.studentId),
+    ])
 
     if (error) {
       console.error('Error fetching certificate request:', error)
       return NextResponse.json({ error: 'Failed to fetch request' }, { status: 500 })
     }
 
-    return NextResponse.json({ request: certRequest })
+    return NextResponse.json({ request: certRequest, totalRequests: count ?? 0 })
   } catch (error) {
     console.error('Certificate requests GET error:', error)
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
