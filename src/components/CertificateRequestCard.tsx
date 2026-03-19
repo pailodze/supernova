@@ -131,7 +131,7 @@ export default function CertificateRequestCard({ studentId }: Props) {
   }
 
   // Only allow new requests when: no request exists OR previous request was rejected
-  const canRequest = !request || request.status === 'rejected' || request.status === 'sent'
+  const canRequest = !request || request.status !== 'pending'
 
   const getStatusBadge = () => {
     if (!request) return null
