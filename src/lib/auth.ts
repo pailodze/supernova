@@ -6,6 +6,8 @@ export type Session = {
   phone: string
   name: string
   isAdmin: boolean
+  /** Self-registered applicant who hasn't submitted the pre-registration form yet. */
+  needsApplication?: boolean
   isImpersonating?: boolean
   originalAdmin?: {
     studentId: string

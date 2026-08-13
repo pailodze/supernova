@@ -8,6 +8,7 @@ const menuCategories = [
     title: 'მომხმარებლები',
     items: [
       { href: '/admin', label: 'სტუდენტები', icon: '👥' },
+      { href: '/admin/applications', label: 'რეგისტრაციები', icon: '🌟' },
     ],
   },
   {

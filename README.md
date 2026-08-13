@@ -1,5 +1,49 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Pre-registration (free courses)
+
+Phone → OTP → application → private Discord invite. Anyone can sign up; the
+existing student database is untouched.
+
+**Setup**
+
+1. Run `supabase-preregistration.sql` in the Supabase SQL editor. It adds the
+   `applications` table and a `students.is_pre_registration` flag.
+2. Set `SUPABASE_SERVICE_ROLE_KEY` (see `.env.example`). **Required.**
+   `applications` holds personal ID numbers, so it has RLS on with no policies —
+   the public anon key cannot read it and only the service role can.
+3. Set `DISCORD_INVITE_URL`, or `DISCORD_BOT_TOKEN` + `DISCORD_CHANNEL_ID` for
+   single-use per-applicant invites.
+
+**New people vs. existing students**
+
+`students.is_pre_registration` is the permanent marker — `status` changes as you
+process someone (`applicant` → accepted), where they came from doesn't.
+
+```sql
+SELECT * FROM students WHERE is_pre_registration;  -- everyone who signed up new
+```
+
+- **Newcomers** must complete `/apply` before reaching any other page, and don't
+  see the certificate request card (they've never taken a course here).
+- **Existing students** are never forced into the application and keep the
+  certificate request form exactly as before. They get an opt-in banner on the
+  dashboard if they want to join the new programme.
+
+`/admin/applications` lists everything with a new/existing badge, a filter, and
+a CSV export.
+
+**Checks**
+
+```bash
+npx tsx scripts/check-middleware.ts   # routing: who sees what, and no redirect loops
+```
+
+**Careful:** `/api/auth/send-otp` now sends to numbers that aren't in the
+database yet, which is what makes self-registration possible. It's rate limited
+to one code per minute and 5 per hour per number — don't loosen that without
+thinking about the SMS bill.
+
 ## Getting Started
 
 First, run the development server:

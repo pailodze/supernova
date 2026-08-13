@@ -40,7 +40,8 @@ export default function VerifyPage() {
 
       // Clear stored phone
       sessionStorage.removeItem('verifyPhone')
-      router.push('/dashboard')
+      // New sign-ups still have to tell us who they are before anything else.
+      router.push(data.needsApplication ? '/apply' : '/dashboard')
     } catch {
       setError('Network error. Please try again.')
     } finally {

@@ -1,6 +1,8 @@
+import Link from 'next/link'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { createServerSupabaseClient } from '@/lib/supabase-server'
+import { createAdminSupabaseClient } from '@/lib/supabase-admin'
 import type { Job, Course, Task, StudentSkill } from '@/lib/supabase'
 import DashboardTabs from '@/components/DashboardTabs'
 import CertificateRequestCard from '@/components/CertificateRequestCard'
@@ -15,6 +17,22 @@ async function getStudent(studentId: string) {
 
   if (error) return null
   return data
+}
+
+/** Has this person applied to the free-courses programme yet? */
+async function hasApplied(studentId: string): Promise<boolean> {
+  try {
+    const admin = createAdminSupabaseClient()
+    const { data } = await admin
+      .from('applications')
+      .select('id')
+      .eq('student_id', studentId)
+      .maybeSingle()
+    return Boolean(data)
+  } catch {
+    // Service role key not configured — hide the CTA rather than break the page.
+    return true
+  }
 }
 
 async function getStudentCourses(studentId: string): Promise<{ ids: string[], names: string[] }> {
@@ -191,10 +209,11 @@ export default async function DashboardPage() {
 
   // Get student's courses, skills, and filter jobs/tasks accordingly
   const studentCourses = await getStudentCourses(session.studentId)
-  const [jobs, tasks, studentSkills] = await Promise.all([
+  const [jobs, tasks, studentSkills, applied] = await Promise.all([
     getJobs(studentCourses.ids),
     getTasks(studentCourses.ids),
     getStudentSkills(session.studentId),
+    hasApplied(session.studentId),
   ])
   
 
@@ -239,8 +258,26 @@ export default async function DashboardPage() {
         </div>
       </div>
 
-      {/* Certificate Request CTA */}
-      <CertificateRequestCard studentId={session.studentId} />
+      {/* Existing students aren't forced through the new application, but the
+          free-courses programme is open to them too — this is how they opt in. */}
+      {!student.is_pre_registration && !applied && (
+        <Link
+          href="/apply"
+          className="block mb-8 p-6 rounded-2xl bg-gradient-to-r from-cyan-500/10 to-purple-600/10 border border-cyan-500/30 hover:border-cyan-400/60 transition"
+        >
+          <p className="font-semibold text-zinc-900 dark:text-white">
+            🌟 უფასო კურსების პროგრამა დაიწყო
+          </p>
+          <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+            შეავსე განაცხადი და მიიღე წვდომა დახურულ Discord არხზე →
+          </p>
+        </Link>
+      )}
+
+      {/* Certificate Request CTA — for the existing student database only.
+          Anyone who signed up through pre-registration has never taken a
+          course here, so there is no certificate for them to request yet. */}
+      {!student.is_pre_registration && <CertificateRequestCard studentId={session.studentId} />}
 
       {/* Tabs */}
       <DashboardTabs jobs={jobs} tasks={tasks} />

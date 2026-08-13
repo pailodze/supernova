@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createServerSupabaseClient } from '@/lib/supabase-server'
+import { checkOtpRateLimit } from '@/lib/otp-rate-limit'
 import { withLogging } from '@/lib/api-logger'
 
 async function sendOtpHandler(request: NextRequest) {
@@ -7,19 +8,29 @@ async function sendOtpHandler(request: NextRequest) {
     const { phone } = await request.json()
 
     if (!phone) {
-      return NextResponse.json(
-        { error: 'Phone number is required' },
-        { status: 400 }
-      )
+      return NextResponse.json({ error: 'Phone number is required' }, { status: 400 })
     }
 
     // Clean phone number
     const cleanPhone = phone.replace(/\D/g, '').trim()
 
     if (!cleanPhone || cleanPhone.length < 9) {
+      return NextResponse.json({ error: 'Invalid phone number format' }, { status: 400 })
+    }
+
+    // Registration is open, so this endpoint now sends to numbers we've never
+    // seen. Rate limit before doing anything that costs money.
+    const limit = await checkOtpRateLimit(cleanPhone)
+    if (!limit.ok) {
       return NextResponse.json(
-        { error: 'Invalid phone number format' },
-        { status: 400 }
+        {
+          error:
+            limit.reason === 'cooldown'
+              ? `ახალი კოდის მოთხოვნა შესაძლებელია ${limit.retryAfter} წამში`
+              : 'ამ ნომრისთვის ლიმიტი ამოიწურა. სცადე ერთი საათის შემდეგ.',
+          retryAfter: limit.retryAfter,
+        },
+        { status: 429 }
       )
     }
 
@@ -33,23 +44,11 @@ async function sendOtpHandler(request: NextRequest) {
         { onConflict: 'phone' }
       )
 
-    // Check if phone exists in students table
-    const { data: student, error: studentError } = await supabase
-      .from('students')
-      .select('id, name, phone')
-      .eq('phone', cleanPhone)
-      .single()
-
-    // SECURITY: Always return the same response regardless of whether phone is registered
-    // This prevents user enumeration attacks
-    if (studentError || !student) {
-      // Still return success to prevent enumeration, but don't send SMS
-      return NextResponse.json({
-        success: true,
-        message: 'If this phone is registered, an OTP will be sent',
-        phone: cleanPhone,
-      })
-    }
+    // NOTE: this used to bail out unless the number was already in `students`,
+    // which made self-registration impossible. Pre-registration is open to
+    // everyone, so we now send to any number and create the account on verify.
+    // That deliberately gives up the old user-enumeration protection — it was
+    // moot the moment anyone could register with any number anyway.
 
     // Generate 6-digit OTP
     const otp = Math.floor(100000 + Math.random() * 900000).toString()
@@ -65,28 +64,21 @@ async function sendOtpHandler(request: NextRequest) {
       .eq('used', false)
 
     // Store OTP in database
-    const { error: otpError } = await supabase
-      .from('otp_codes')
-      .insert({
-        phone: cleanPhone,
-        code: otp,
-        expires_at: expiresAt,
-        used: false,
-      })
+    const { error: otpError } = await supabase.from('otp_codes').insert({
+      phone: cleanPhone,
+      code: otp,
+      expires_at: expiresAt,
+      used: false,
+    })
 
     if (otpError) {
       console.error('Error storing OTP:', otpError)
-      // Return same success message to prevent enumeration
-      return NextResponse.json({
-        success: true,
-        message: 'If this phone is registered, an OTP will be sent',
-        phone: cleanPhone,
-      })
+      return NextResponse.json({ error: 'კოდის გაგზავნა ვერ მოხერხდა' }, { status: 500 })
     }
 
     // Send SMS via sender.ge
     const smsApiKey = process.env.SMS_API_KEY
-    const message = encodeURIComponent(`Your verification code is: ${otp}`)
+    const message = encodeURIComponent(`supernova.guru კოდი: ${otp}`)
     const smsUrl = `https://sender.ge/api/send.php?apikey=${smsApiKey}&smsno=1&destination=${cleanPhone}&content=${message}`
 
     try {
@@ -98,18 +90,14 @@ async function sendOtpHandler(request: NextRequest) {
       // Don't fail the request if SMS fails - for testing purposes
     }
 
-    // Return same response for registered users (prevents enumeration)
     return NextResponse.json({
       success: true,
-      message: 'If this phone is registered, an OTP will be sent',
+      message: 'კოდი გაიგზავნა',
       phone: cleanPhone,
     })
   } catch (error) {
     console.error('Send OTP error:', error)
-    return NextResponse.json(
-      { error: 'Internal server error' },
-      { status: 500 }
-    )
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
 }
 
