@@ -36,6 +36,8 @@ export type Student = {
   sales_manager: string
   coins: number
   is_admin: boolean
+  /** TRUE = signed up through pre-registration; FALSE = existing Novatori student. */
+  is_pre_registration: boolean
   created_at: string
 }
 
@@ -46,6 +48,24 @@ export type OtpCode = {
   expires_at: string
   used: boolean
   created_at: string
+}
+
+/** A pre-registration application for the free-courses programme. */
+export type Application = {
+  id: string
+  student_id: string
+  first_name: string
+  last_name: string
+  personal_id: string
+  education: string
+  interests: string
+  work_experience: string
+  why_supernova: string
+  status: string
+  discord_invite_url: string | null
+  discord_invite_created_at: string | null
+  created_at: string
+  updated_at: string
 }
 
 export type SkillRequirement = {

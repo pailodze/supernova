@@ -258,10 +258,10 @@ export default function LandingPage() {
     }
   }
 
-  // Show nothing while checking session
-  if (checkingSession) {
-    return <div className="h-screen bg-[rgb(3,7,18)]" />
-  }
+  // NOTE: this used to return a blank screen until the session check came back,
+  // which meant the server-rendered HTML of the landing page was empty — bad for
+  // search engines and for anyone on a slow connection. The page now renders
+  // immediately and only the call to action swaps once we know who's visiting.
 
   return (
     <div className="min-h-screen text-white flex flex-col">
@@ -274,7 +274,7 @@ export default function LandingPage() {
         <div className="relative z-10 text-center max-w-3xl mx-auto w-full">
           {/* Tagline */}
           <div className="mb-3 text-cyan-400 text-xs tracking-[0.3em] uppercase animate-pulse">
-            SERIES 2
+            წინასწარი რეგისტრაცია გახსნილია
           </div>
 
           {/* Main Title */}
@@ -282,30 +282,38 @@ export default function LandingPage() {
             SUPERNOVA
           </h1>
           <p className="text-xs text-zinc-400 mb-4 tracking-[0.3em] uppercase">
-            GURU EDITION
+            GURU EDITION · SERIES 2
+          </p>
+
+          {/* --- YOUR STORY: edit these two sentences freely --- */}
+          <p className="text-sm md:text-base text-zinc-300 mb-6 max-w-xl mx-auto leading-relaxed">
+            თავიდან ვიწყებ — ამჯერად უფასოდ. ვქმნი უფასო კურსებს ჩემი ყოფილი
+            სტუდენტებისთვის და ყველასთვის, ვისაც პროგრამირების სწავლა უნდა.
           </p>
 
           {/* Story Cards */}
           <div className="flex flex-col md:flex-row justify-center gap-3 mb-8 w-full">
             <div className="flex flex-col items-center p-5 rounded-xl bg-zinc-900/60 backdrop-blur-sm border border-zinc-700/50 flex-1">
+              <span className="text-3xl mb-2">🎓</span>
+              <p className="text-sm font-medium text-cyan-400">უფასო კურსები</p>
+              <p className="text-xs text-zinc-500 text-center mt-1 leading-relaxed">სრულად უფასო. გადახდა, გამოწერა და ფარული ხარჯები არ არსებობს.</p>
+            </div>
+            <div className="flex flex-col items-center p-5 rounded-xl bg-zinc-900/60 backdrop-blur-sm border border-zinc-700/50 flex-1">
+              <span className="text-3xl mb-2">💬</span>
+              <p className="text-sm font-medium text-green-400">დახურული საზოგადოება</p>
+              <p className="text-xs text-zinc-500 text-center mt-1 leading-relaxed">განაცხადის შევსების შემდეგ მიიღებ წვდომას დახურულ Discord არხზე.</p>
+            </div>
+            <div className="flex flex-col items-center p-5 rounded-xl bg-zinc-900/60 backdrop-blur-sm border border-zinc-700/50 flex-1">
               <span className="text-3xl mb-2">🚀</span>
-              <p className="text-sm font-medium text-cyan-400">სტაჟირების პროგრამა</p>
-              <p className="text-xs text-zinc-500 text-center mt-1 leading-relaxed">გააგრძელე სტაჟირების პროგრამა რეალურ პროექტებში.</p>
-            </div>
-            <div className="flex flex-col items-center p-5 rounded-xl bg-zinc-900/60 backdrop-blur-sm border border-zinc-700/50 flex-1">
-              <span className="text-3xl mb-2">💼</span>
-              <p className="text-sm font-medium text-green-400">ანაზღაურებადი პოზიციები</p>
-              <p className="text-xs text-zinc-500 text-center mt-1 leading-relaxed">დააგროვე ქულები ლიდერბორდში და მიიღე ანაზღაურებადი პოზიცია.</p>
-            </div>
-            <div className="flex flex-col items-center p-5 rounded-xl bg-zinc-900/60 backdrop-blur-sm border border-zinc-700/50 flex-1">
-              <span className="text-3xl mb-2">🎯</span>
-              <p className="text-sm font-medium text-purple-400">მინი პროექტები</p>
-              <p className="text-xs text-zinc-500 text-center mt-1 leading-relaxed">დააგროვე ქულები ლიდერბორდში და მიიღე ერთჯერადი ანაზღაურებადი პროექტი.</p>
+              <p className="text-sm font-medium text-purple-400">რეალური პროექტები</p>
+              <p className="text-xs text-zinc-500 text-center mt-1 leading-relaxed">სტაჟირება, დავალებები და ანაზღაურებადი პოზიციები მათთვის, ვინც წინ წაიწევს.</p>
             </div>
           </div>
 
-          {/* Login Form or Dashboard Button */}
-          {isLoggedIn ? (
+          {/* Registration form, or a way back in for people already signed in.
+              While the session check is in flight we show the form, because
+              almost everyone landing here is logged out. */}
+          {!checkingSession && isLoggedIn ? (
             <button
               onClick={() => router.push('/dashboard')}
               className="w-full py-3 px-6 bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white font-semibold rounded-xl transition-all hover:scale-[1.02] hover:shadow-lg hover:shadow-cyan-500/25"
@@ -314,8 +322,8 @@ export default function LandingPage() {
             </button>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
-              <p className="text-xs text-amber-400 mb-2">
-                ამჟამად მხოლოდ ნოვატორის სტუდენტებისთვის
+              <p className="text-xs text-zinc-400 mb-2">
+                შეიყვანე ნომერი — გამოგიგზავნით კოდს. ახალი ხარ თუ ჩემი ყოფილი სტუდენტი, ერთი და იგივე ღილაკია.
               </p>
               <div>
                 <input
@@ -345,7 +353,7 @@ export default function LandingPage() {
                     იგზავნება...
                   </span>
                 ) : (
-                  'შესვლა'
+                  'გაგრძელება'
                 )}
               </button>
             </form>
